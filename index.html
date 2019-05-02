@@ -2,41 +2,78 @@
     <meta charset="utf-8">
     <meta name="author" content="Jennifer Li">
     <meta name="Project Stage 1" content="This is the stage one of the info340 project">
-    <title>Project Stage 1: HTML & CSS</title>
+    <title>DESIGN372</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
-                <a href="#"><span class="logo" aria-hidden="true">&nbsp;</span>Home</a>
-                <a href="#about">About</a>
-               <a href="#signs">Signs</a>
-                <a href="#methods">Methods</a>
-                <a href="./page.html">Common Mental Disorders</a>
+    <div id="bannersection">
+        <div class="bannercontent">
+            <h1>YOU ARE NOT ALONE.</h1>
         </div>
-        </nav>
-<header>
-        <h1>Your Mental Health Support</h1>
-    </header>
+    </div>
+    <div class="section#1">
+        <h2>CSE Self-Efficacy 2019</h2>
+        <p>
+            Within competitive majors, such as CSE, low self-efficacy is prevalent among students. The stair installations, which can be found in both 
+Allen and Gates centers,  show the volume just how many people struggle with low self-efficacy in hopes to bring awareness to and encourage dialogue about low self-efficacy.
+        </p>
+        <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+    </div>
+    <div class="section#2">
+        <h2>What is self-efficacy?</h2>
+        <p>Self-efficacy is an individual’s belief in their innate ability to achieve goals. Albert Bandura defines it as a personal judgment of 
+            “how well one can execute courses of action required to deal with prospective situations”. </p>
+            <ol>
+                    <li>- Easier to withdraw from difficult tasks.</li>
+                    <li>- Have low aspirations and a weaker commitment to the goals.</li>
+                    <li>- Slower to recover from failures.</li>
+                    <li>- Focuses on personal failings and negative outcomes.</li>
+                    <li>- Easier to suffer from stress, isolation, and other mental health problems.</li>
+                  </ol>
+    </div>
+    <div class="section#3">
+           <h2>Research Highlights</h2>
+           <div class="slideshow-container">
 
-    <p id="intro"> Research indicates that extreme weather events such as large storms, flooding, droughts and heat waves are likely to 
-        become more frequent or more intense with climate change. Experiencing disasters related 
-        to climate and weather can cause significant stress and distress for many and contribute to more serious mental health issues.
-    You can enter your zipcode below to get today's weather forecast!</p>
-<form>
-    <input id="zipcode" value="" type="text" pattern="[0-9]{5}" title="Five digit zip code"/>
-    <input type = "button" value ="search" onclick="getWeather()"/>
-</form>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
 
-<div id="card">
-<div id="content">
-    
-    <h2 id="city">City:  </h2>
-    <h3 id="temp">Temperature:  </h3>
-    <h3 id="des">Desciption:  </h3>
-   
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-<h2> Top 10 countries with high suicide rate</h2>
+    </div>
+<div class="section#4">
+<h2>Resources</h2>
+</div>
+
+<div class="section#5">
+<h2>Team</h2>
+</div>
 </body>
