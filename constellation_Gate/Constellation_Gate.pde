@@ -7,6 +7,12 @@ PFont prompt;
 PFont current;
 int count = 0; // # of votes
 
+//void settings() {
+  
+  //size(displayWidth, displayHeight);
+  
+//}
+
 void setup() {
   fullScreen();
   prompt = createFont("AvenirNext-Bold", 45);
