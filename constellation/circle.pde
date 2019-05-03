@@ -1,4 +1,4 @@
-color[] colorList = {color(0, 0, 255), color(255, 0, 255)};
+// color[] colorList = {color(0, 0, 255), color(255, 0, 255)};
 
 public class Circle{
   PVector location,velocity,acceleration;
@@ -16,13 +16,12 @@ public class Circle{
     acceleration = new PVector(0,0);
     G = 0.6;
     mass = 2;
-    size = 65;
+    size = 70;
   }
 
   void applyForce(PVector force){
-    PVector f = force.get();
-    f.div(mass);
-    acceleration.add(f);
+    force.div(mass);
+    acceleration.add(force);
   }
 
   void update(){
@@ -53,7 +52,7 @@ public class Circle{
   void link(Circle c){
     // stroke (rgb, alpha). alpha-> float: opacity of the stroke
     stroke(255, 100);
-    strokeWeight(0.7);
+    strokeWeight(1);
     PVector dist = PVector.sub(c.location,location);
     // the magnitude of distance is less than 200, draw a line b/w the two
     if (dist.mag() > 250 && dist.mag() < 350) {

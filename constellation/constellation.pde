@@ -2,17 +2,12 @@ import processing.sound.*;
 
 ArrayList<Circle> circles = new ArrayList<Circle>();
 SoundFile file;
-Circle c;
 PFont prompt;
 PFont current;
 int count = 0; // # of votes
-
-//void settings() {
-  
-  //size(displayWidth, displayHeight);
-  
+//void setting() {
+//  size(displayWidth, displayHeight);
 //}
-
 void setup() {
   fullScreen();
   prompt = createFont("AvenirNext-Bold", 45);
@@ -62,12 +57,25 @@ void draw() {
  
 void keyPressed(){
   if (keyCode == LEFT) {
-    c = new Circle("Allen");
+    noLoop();
+  } else if (keyCode == RIGHT) {
+    noLoop();
+  } else {
+    circles.clear();
+    count = 0;
+  }
+}
+ 
+void keyReleased() {
+  if (keyCode == LEFT) {
+    loop();
+    Circle c = new Circle("Allen");
     circles.add(c);
     file.play();
     count++;
   } else if (keyCode == RIGHT) {
-    c = new Circle("Gates");
+    loop();
+    Circle c = new Circle("Gates");
     circles.add(c);
     file.play();
     count++;
@@ -76,4 +84,3 @@ void keyPressed(){
     count = 0;
   }
 }
- 
