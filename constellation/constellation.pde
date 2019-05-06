@@ -2,10 +2,10 @@ import processing.sound.*;
 
 ArrayList<Circle> circles = new ArrayList<Circle>();
 SoundFile file;
-Circle c;
 PFont prompt;
 PFont current;
 int count = 0; // # of votes
+<<<<<<< HEAD:constellation_Gate/Constellation_Gate.pde
 
 void settings() {
   
@@ -13,6 +13,11 @@ void settings() {
   
 }
 
+=======
+//void setting() {
+//  size(displayWidth, displayHeight);
+//}
+>>>>>>> 2b136442b3825ec3efce13aac9497c3ec5f24830:constellation/constellation.pde
 void setup() {
   //fullScreen();
   prompt = createFont("AvenirNext-Bold", 45);
@@ -62,12 +67,25 @@ void draw() {
  
 void keyPressed(){
   if (keyCode == LEFT) {
-    c = new Circle("Allen");
+    noLoop();
+  } else if (keyCode == RIGHT) {
+    noLoop();
+  } else {
+    circles.clear();
+    count = 0;
+  }
+}
+ 
+void keyReleased() {
+  if (keyCode == LEFT) {
+    loop();
+    Circle c = new Circle("Allen");
     circles.add(c);
     file.play();
     count++;
   } else if (keyCode == RIGHT) {
-    c = new Circle("Gates");
+    loop();
+    Circle c = new Circle("Gates");
     circles.add(c);
     file.play();
     count++;
@@ -76,4 +94,3 @@ void keyPressed(){
     count = 0;
   }
 }
- 
