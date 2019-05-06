@@ -7,14 +7,14 @@ PFont prompt;
 PFont current;
 int count = 0; // # of votes
 
-//void settings() {
+void settings() {
   
-  //size(displayWidth, displayHeight);
+  size(displayWidth, displayHeight);
   
-//}
+}
 
 void setup() {
-  fullScreen();
+  //fullScreen();
   prompt = createFont("AvenirNext-Bold", 45);
   current = createFont("AvenirNext-Bold", 45);
   file = new SoundFile(this, "sound.mp3");
