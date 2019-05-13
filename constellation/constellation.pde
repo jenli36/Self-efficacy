@@ -2,19 +2,24 @@ import processing.sound.*;
 
 ArrayList<Circle> circles = new ArrayList<Circle>();
 SoundFile file;
-Circle c;
 PFont prompt;
 PFont current;
 int count = 0; // # of votes
 
-//void settings() {
+
+void settings() {
   
-  //size(displayWidth, displayHeight);
+  size(displayWidth, displayHeight);
   
-//}
+}
+
+
+void setting() {
+  size(displayWidth, displayHeight);
+}
 
 void setup() {
-  fullScreen();
+  //fullScreen();
   prompt = createFont("AvenirNext-Bold", 45);
   current = createFont("AvenirNext-Bold", 45);
   file = new SoundFile(this, "sound.mp3");
@@ -23,11 +28,11 @@ void setup() {
 
 void draw() {
   // set the color of the background
-  background(0);
+  background(255);
   noCursor();
   // Displays the prompt
   textFont(prompt, 40);
-  fill(255); // the color of the prompt
+  fill(0); // the color of the prompt
   textAlign(CENTER);
   // Setting for Gates
   text("HAVE  YOU  EVER", 820, 460);
@@ -62,12 +67,25 @@ void draw() {
  
 void keyPressed(){
   if (keyCode == LEFT) {
-    c = new Circle("Allen");
+    noLoop();
+  } else if (keyCode == RIGHT) {
+    noLoop();
+  } else {
+    circles.clear();
+    count = 0;
+  }
+}
+ 
+void keyReleased() {
+  if (keyCode == LEFT) {
+    loop();
+    Circle c = new Circle("Allen");
     circles.add(c);
     file.play();
     count++;
   } else if (keyCode == RIGHT) {
-    c = new Circle("Gates");
+    loop();
+    Circle c = new Circle("Gates");
     circles.add(c);
     file.play();
     count++;
@@ -76,4 +94,3 @@ void keyPressed(){
     count = 0;
   }
 }
- 
