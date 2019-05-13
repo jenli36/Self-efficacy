@@ -45,13 +45,13 @@ public class Circle{
     //} else {
     //    fill(255);
     //}
-    fill(255);
+    fill(0);
     ellipse(location.x, location.y, size, size);
   }
   
   void link(Circle c){
     // stroke (rgb, alpha). alpha-> float: opacity of the stroke
-    stroke(255, 100);
+    stroke(0,75);
     strokeWeight(1);
     PVector dist = PVector.sub(c.location,location);
     // the magnitude of distance is less than 200, draw a line b/w the two

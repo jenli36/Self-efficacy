@@ -5,7 +5,7 @@ SoundFile file;
 PFont prompt;
 PFont current;
 int count = 0; // # of votes
-<<<<<<< HEAD:constellation_Gate/Constellation_Gate.pde
+
 
 void settings() {
   
@@ -13,11 +13,11 @@ void settings() {
   
 }
 
-=======
-//void setting() {
-//  size(displayWidth, displayHeight);
-//}
->>>>>>> 2b136442b3825ec3efce13aac9497c3ec5f24830:constellation/constellation.pde
+
+void setting() {
+  size(displayWidth, displayHeight);
+}
+
 void setup() {
   //fullScreen();
   prompt = createFont("AvenirNext-Bold", 45);
@@ -28,11 +28,11 @@ void setup() {
 
 void draw() {
   // set the color of the background
-  background(0);
+  background(255);
   noCursor();
   // Displays the prompt
   textFont(prompt, 40);
-  fill(255); // the color of the prompt
+  fill(0); // the color of the prompt
   textAlign(CENTER);
   // Setting for Gates
   text("HAVE  YOU  EVER", 820, 460);
