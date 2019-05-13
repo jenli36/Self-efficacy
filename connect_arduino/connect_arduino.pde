@@ -24,13 +24,14 @@ void setup() {
   music = new SoundFile(this, "sound.mp3");
   music.amp(0.7); // the volumn  value is [0.0, 1.0] 
   read = true;
+  time = millis();
 }
 
 void draw() {
   background(0);  // set the color of the background
   noCursor();  // does not show cursor
   fill(255); // the color of the prompt
-  float x = 820;
+  float x = width / 2;
   float y = 460;
   textAlign(CENTER, BOTTOM);
   pushMatrix();
@@ -71,18 +72,17 @@ void draw() {
 void serialEvent(Serial myPort) {
    if (myPort.available() > 0) {
     val = myPort.readStringUntil('\n');
-    if (val != null && read) {
-      read = false; 
-      time = millis();
+    if (val != null) {
+  //    read = false; 
+  //    time = millis();
       music.play();
       Circle c = new Circle("Allen");
       circles.add(c);
       count++;
     }
+
   }
-  
-  if (!read && time + 3000 > millis()) {
-    read = true;
-    time = millis();
-  }
+  //if (time + 3000 > millis()) {
+  //  read = true;
+  //}
 }
