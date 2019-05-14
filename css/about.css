@@ -1,0 +1,49 @@
+* {
+    font-family: franklin-gothic-urw-comp, sans-serif;
+font-style: medium;
+font-weight: 400;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.about, .team{
+    display: flex;
+    justify-content: space-between;
+}
+
+#intro {
+	max-width: 45ch;
+	margin-right: 3ch;
+}
+
+#title {
+	font-style: unset;
+	max-width: 12ch;
+	margin-left: 3ch;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
