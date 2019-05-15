@@ -32,19 +32,20 @@ void draw() {
   noCursor();  // does not show cursor
   fill(255); // the color of the prompt
   float x = width / 2;
-  float y = 460;
+  float y = 350;
   textAlign(CENTER, BOTTOM);
   pushMatrix();
   translate(x,y);
+  // setting for Gates
   textFont(prompt, 40);
   // Setting for Gates
-  text("HAVE  YOU  EVER", 0, 0);
+  text("I HAVE ONCE", 0, 0);
   text("DOUBTED", 0, 65);
-  text("YOUR  EDUCATIONAL", 0, 150);
-  text("SKILL  SET?", 0, 230);
+  text("MY  EDUCATIONAL", 0, 150);
+  text("SKILL  SET", 0, 230);
   // Displays the current number of people who said yes
   textFont(current, 40);
-  text(count + " PEOPLE SAID YES", 0, 320);
+  text(count + " PEOPLE AGREED", 0, 320);
   popMatrix();
  
   
@@ -72,9 +73,9 @@ void draw() {
 void serialEvent(Serial myPort) {
    if (myPort.available() > 0) {
     val = myPort.readStringUntil('\n');
-    if (val != null) {
-  //    read = false; 
-  //    time = millis();
+    if (val != null && read) {
+      read = false;
+      time = millis();
       music.play();
       Circle c = new Circle("Allen");
       circles.add(c);
@@ -82,7 +83,7 @@ void serialEvent(Serial myPort) {
     }
 
   }
-  //if (time + 3000 > millis()) {
-  //  read = true;
-  //}
+  if (time + 3000 > millis()) {
+    read = true;
+  }
 }
