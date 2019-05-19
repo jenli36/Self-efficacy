@@ -7,7 +7,7 @@
     src: url(font/GT-Super-Display-Super.woff);
 }
 @font-face{
-    font-family:heavyFont;
+    font-family:"heavyFont";
     src: url(font/272EE5_0_0.woff);
 }
 @font-face{
@@ -15,11 +15,11 @@
     src: url(font/272EE5_1_0.woff);
 }
 @font-face{
-    font-family:demiFont;
+    font-family:"demiFont";
     src: url(font/272EE5_2_0.woff);
 }
 @font-face{
-    font-family:regularFont;
+    font-family:"regularFont";
     src: url(font/dandad-icons.woff);
 }
 
@@ -27,7 +27,7 @@ h1{
     margin:0px;
 }
 .huge_title{
-    font-family: GT-Super-Display-Super;
+    font-family: GT-Super-Display-Light;
 }
 
 .masthead{
@@ -62,22 +62,25 @@ h1{
 /* for the forward section */
 .forward{
     padding-top:80px;
-    background-color:#f2f2f2;
+    padding-bottom:80px;
+    background-color:white;
     color:black;
     width:100%;
     display:flex;
 }
+
+
 .left{
     font-family:GT-Super-Display-Super;
     writing-mode: vertical-rl;
-    font-size:100pt;
+    font-size:70pt;
     color:black;
     margin-left:55px;
 }
 .right{
     width:75%;
-    padding-left: 280px;
-    padding-right:75px;
+    padding-left: 250px;
+    padding-right:73px;
 }
 .para,.boldpara{
     margin-top:0px;
@@ -85,10 +88,10 @@ h1{
     font-size: 15pt;
 }
 .para{
-    font-family: regularFont;
+    font-family: "regularFont";
 }
 .boldpara{
-    font-family: demiFont;
+    font-family: "demiFont";
     text-decoration: bold;
 }
 .names{
@@ -102,8 +105,22 @@ h1{
     display:flex;
 }
 .righthalf{
-    padding-left:50px;
+    padding-left:10px;
+}
+.index{
+    padding-top: 30px;
 }
 .links{
     font-family: GT-Super-Display-Light;
+}
+/* for the footer */
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+.footerText{
+    font-size: 12pt;
+    text-align: center;
+    color: white;
 }
