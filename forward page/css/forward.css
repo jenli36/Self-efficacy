@@ -1,0 +1,87 @@
+@font-face{
+    font-family:GT-Super-Display-Light;
+    src: url(font/GT-Super-Display-Light.woff);
+    font-family:GT-Super-Display-Super;
+    src: url(font/GT-Super-Display-Super.woff);
+}
+h1{
+    margin:0px;
+}
+h3,.huge_title{
+    font-family: GT-Super-Display-Light;
+}
+p{
+    font-family:'Franklin Gothic Medium', arial;
+}
+
+.masthead{
+    padding:200px 0px 100px 0px;
+    background-color:black;
+    width:100%;
+}
+.huge_title{
+    color: #ffffff;
+    font-size:60px;
+}
+
+.message{
+    font-size:18px;
+    color: #ffffff;
+    opacity: 0.9;
+    padding-bottom: 30px;
+}
+.explore{
+    padding:15px 34px;
+    background:transparent;
+    font-size:16px;
+    text-align:center;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+.banner{
+    background-color: black;
+    margin-left: 75px;
+}
+
+/* for the forward section */
+.forward{
+    padding-top:80px;
+    background-color:#f2f2f2;
+    color:black;
+    width:100%;
+    display:flex;
+}
+.left{
+    font-family:GT-Super-Display-Super;
+    writing-mode: vertical-rl;
+    font-size:40px;
+    color:black;
+    font-size:60px;
+    margin-left:55px;
+}
+.right{
+    width:75%;
+    padding-left: 280px;
+    padding-right:75px;
+}
+.para{
+    margin-top:0px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.firstpara{
+    font-weight:bold;
+}
+.names{
+    font-style:italic;
+}
+
+.subsection{
+    text-decoration: underline;
+}
+.row{
+    display:flex;
+}
+.righthalf{
+    padding-left:50px;
+}
