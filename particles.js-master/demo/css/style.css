@@ -120,10 +120,10 @@ canvas{
   color: white;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   font-size:8px;
-  margin-top: 70px;
   transform: rotate(90deg);
-  position: fixed;
-  right: 0;
+  position: absolute;
+  top: 80vh;
+  right: -60px;
   letter-spacing: 2px;
   animation: fadein 3s;
 }
@@ -142,11 +142,136 @@ canvas{
   animation: fadein 3s;
 }
 
+.text-container {
+  position: absolute;
+  top: 50vh;
+}
+
+#content {
+  background-color: #fff;
+}
+
+h1{
+  margin:0px;
+}
+.huge_title{
+  font-family: GT-Super-Display-Light;
+}
+
+.masthead{
+  padding:200px 0px 100px 0px;
+  background-color:black;
+  width:100%;
+}
+.huge_title{
+  color: #ffffff;
+  font-size:70pt;
+}
+
+.message{
+  font-size:18px;
+  color: #ffffff;
+  opacity: 0.9;
+  padding-bottom: 30px;
+}
+.explore{
+  padding:15px 34px;
+  background:transparent;
+  font-size:16px;
+  text-align:center;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.banner{
+  background-color: black;
+  margin-left: 75px;
+}
+
+/* for the forward section */
+.forward{
+  padding-top:80px;
+  padding-bottom:80px;
+  background-color:white;
+  color:black;
+  width:100%;
+  display:flex;
+}
+
+
+.left{
+  font-family:GT-Super-Display-Super;
+  writing-mode: vertical-rl;
+  font-size:70pt;
+  color:black;
+  margin-left:55px;
+}
+.right{
+  width:75%;
+  padding-left: 250px;
+  padding-right:73px;
+}
+.para,.boldpara{
+  margin-top:0px;
+  line-height: 22pt;
+  font-size: 15pt;
+}
+.para{
+  font-family: "regularFont";
+}
+.boldpara{
+  font-family: "demiFont";
+  text-decoration: bold;
+}
+.names{
+  font-style:italic;
+}
+
+.subsection{
+  text-decoration: underline;
+}
+.row{
+  display:flex;
+}
+.righthalf{
+  padding-left:10px;
+}
+.index{
+  padding-top: 30px;
+}
+.links{
+  font-family: GT-Super-Display-Light;
+}
+/* for the footer */
+footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+.footerText{
+  font-size: 12pt;
+  text-align: center;
+  color: white;
+}
+
+@media(max-width: 375px) {
+  .text-container {
+    top: 40vh;
+  }
+}
+
 @font-face{
   font-family:GT-Super-Display-Light;
   src: url(font/GT-Super-Display-Light.woff);
   font-family:GT-Super-Display-Super;
   src: url(font/GT-Super-Display-Super.woff);
+  font-family:"heavyFont";
+    src: url(font/272EE5_0_0.woff);
+    font-family:mid-heavyFont;
+    src: url(font/272EE5_1_0.woff);
+    font-family:"demiFont";
+    src: url(font/272EE5_2_0.woff);
+    font-family:"regularFont";
+    src: url(font/dandad-icons.woff);
 }
 
 @keyframes fadein {
