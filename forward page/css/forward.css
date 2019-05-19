@@ -1,71 +1,79 @@
 @font-face{
     font-family:GT-Super-Display-Light;
-    src: url(font/GT-Super-Display-Light.woff);
+    src: url("../font/GT-Super-Display-Light.woff");
 }
 @font-face{
     font-family:GT-Super-Display-Super;
-    src: url(font/GT-Super-Display-Super.woff);
+    src: url("../font/GT-Super-Display-Super.woff");
 }
 @font-face{
-    font-family:"heavyFont";
-    src: url(font/272EE5_0_0.woff);
+    font-family:heavyFont;
+    src: url("../font/272EE5_0_0.woff");
 }
 @font-face{
     font-family:mid-heavyFont;
-    src: url(font/272EE5_1_0.woff);
+    src: url("../font/272EE5_1_0.woff");
 }
 @font-face{
-    font-family:"demiFont";
-    src: url(font/272EE5_2_0.woff);
+    font-family:demiFont;
+    src: url("../font/272EE5_2_0.woff");
 }
 @font-face{
-    font-family:"regularFont";
-    src: url(font/dandad-icons.woff);
+    font-family:regularFont;
+    src: url("../font/dandad-icons.woff");
 }
-
-h1{
-    margin:0px;
+/* clears all the default padding and margin */
+*{
+    padding:0;
+    margin:0;
 }
-.huge_title{
-    font-family: GT-Super-Display-Light;
+.message,.explore,#team{
+    font-family: 'Franklin Gothic Medium';
 }
-
 .masthead{
-    padding:200px 0px 100px 0px;
+    padding:100px 0px 100px 0px;
     background-color:black;
-    width:100%;
+}
+#team{
+    padding-left:1225px;
+    text-orientation:sideways-right;
+    writing-mode: vertical-rl;
+    font-size:10pt;
+    color:white;
 }
 .huge_title{
-    color: #ffffff;
-    font-size:70pt;
+    font-family: GT-Super-Display-Super;
+    color:white;
+    font-size:70px;
 }
 
 .message{
-    font-size:18px;
+    font-size:15pt;
+    line-height: 18px;
     color: #ffffff;
     opacity: 0.9;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .explore{
-    padding:15px 34px;
+    padding:15pt 34px;
+    font-weight:bold;
     background:transparent;
-    font-size:16px;
+    font-size:14px;
     text-align:center;
     color: #ffffff;
     border: 2px solid #ffffff;
 }
 .banner{
     background-color: black;
-    margin-left: 75px;
+    margin-left: 73px;
 }
 
 /* for the forward section */
 .forward{
     padding-top:80px;
-    padding-bottom:80px;
+    padding-bottom:50px;
     background-color:white;
-    color:black;
-    width:100%;
+    color:black;    
     display:flex;
 }
 
@@ -73,29 +81,38 @@ h1{
 .left{
     font-family:GT-Super-Display-Super;
     writing-mode: vertical-rl;
-    font-size:70pt;
+    font-size:100px;
     color:black;
-    margin-left:55px;
+    margin-left:0px;
+    margin-left:40px;
 }
+
 .right{
-    width:75%;
     padding-left: 250px;
-    padding-right:73px;
+    padding-right:70px;
 }
+
 .para,.boldpara{
-    margin-top:0px;
+    margin-top:22pt;
     line-height: 22pt;
     font-size: 15pt;
 }
-.para{
-    font-family: "regularFont";
+.firstpara{
+    margin-top:0px;
+    font-size: 15pt;
+    line-height:22pt;
 }
-.boldpara{
-    font-family: "demiFont";
-    text-decoration: bold;
+/* setting the fonts for the paragraph */
+.para,.names{
+    font-family:regularFont;
+}
+
+.boldpara, .firstpara{
+    font-family: demiFont;
 }
 .names{
     font-style:italic;
+    padding-bottom: 10px;
 }
 
 .subsection{
@@ -103,15 +120,22 @@ h1{
 }
 .row{
     display:flex;
+    padding-bottom: 30px;
+}
+.description{
+    font-size:15pt;
+    line-height:22pt;
+    margin-top:0px;
 }
 .righthalf{
     padding-left:10px;
 }
 .index{
     padding-top: 30px;
+    padding-bottom:15px;
 }
 .links{
-    font-family: GT-Super-Display-Light;
+    font-family: regularFont;
 }
 /* for the footer */
 footer{
@@ -120,7 +144,7 @@ footer{
     background-color: black;
 }
 .footerText{
-    font-size: 12pt;
+    font-size: 10pt;
     text-align: center;
     color: white;
 }
