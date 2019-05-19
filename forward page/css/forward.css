@@ -28,35 +28,30 @@
     margin:0;
 }
 
-.message,.explore,#team{
+.explore{
     font-family: 'Franklin Gothic Medium';
 }
-.masthead{
-    padding:100px 0px 100px 0px;
-    background-color:black;
+.message{
+    font-family:mid-heavyFont;
 }
-#team{
-    padding-left:1225px;
-    text-orientation:sideways-right;
-    writing-mode: vertical-rl;
-    font-size:10pt;
-    color:white;
+.masthead{
+    padding:200px 0px 100px 0px;
+    background-color:black;
 }
 .huge_title{
     font-family: GT-Super-Display-Super;
     color:white;
     font-size:70px;
 }
-
 .message{
-    font-size:15pt;
+    font-size:14pt;
     line-height: 18px;
     color: #ffffff;
     opacity: 0.9;
     padding-bottom: 40px;
 }
 .explore{
-    padding:15pt 34px;
+    padding:14pt 34px;
     font-weight:bold;
     background:transparent;
     font-size:14px;
@@ -66,13 +61,13 @@
 }
 .banner{
     background-color: black;
-    margin-left: 73px;
+    margin-left: 125px;
 }
 
 /* for the forward section */
 .forward{
-    padding-top:80px;
-    padding-bottom:50px;
+    padding-top:150px;
+    padding-bottom:100px;
     background-color:white;
     color:black;    
     display:flex;
@@ -82,30 +77,31 @@
 .left{
     font-family:GT-Super-Display-Super;
     writing-mode: vertical-rl;
-    font-size:100px;
+    font-size:90px;
     color:black;
     margin-left:0px;
-    margin-left:40px;
+    margin-left:90px;
 }
 
 .right{
-    padding-left: 250px;
-    padding-right:70px;
+    width:650px;
+    padding-left: 300px;
+    padding-right:90px;
 }
 
 .para,.boldpara{
     margin-top:22pt;
-    line-height: 22pt;
-    font-size: 15pt;
+    line-height: 25px;
+    font-size: 18px;
 }
 .firstpara{
     margin-top:0px;
-    font-size: 15pt;
-    line-height:22pt;
+    font-size: 18px;
+    line-height:25px;
 }
 /* setting the fonts for the paragraph */
 .para,.names{
-    font-family:regularFont;
+    font-family:mid-heavyFont;
 }
 
 .boldpara, .firstpara{
@@ -116,32 +112,15 @@
     padding-bottom: 10px;
 }
 
-.subsection{
-    text-decoration: underline;
-}
 .row{
     display:flex;
     padding-bottom: 30px;
 }
-.description{
-    font-size:15pt;
-    line-height:22pt;
-    margin-top:0px;
-}
-.righthalf{
-    padding-left:10px;
-}
-.index{
-    padding-top: 30px;
-    padding-bottom:15px;
-}
-.links{
-    font-family: regularFont;
-}
+
 /* for the footer */
 footer{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: black;
 }
 .footerText{
