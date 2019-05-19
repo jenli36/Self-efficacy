@@ -1,17 +1,33 @@
 @font-face{
     font-family:GT-Super-Display-Light;
     src: url(font/GT-Super-Display-Light.woff);
+}
+@font-face{
     font-family:GT-Super-Display-Super;
     src: url(font/GT-Super-Display-Super.woff);
 }
+@font-face{
+    font-family:"heavyFont";
+    src: url(font/272EE5_0_0.woff);
+}
+@font-face{
+    font-family:mid-heavyFont;
+    src: url(font/272EE5_1_0.woff);
+}
+@font-face{
+    font-family:"demiFont";
+    src: url(font/272EE5_2_0.woff);
+}
+@font-face{
+    font-family:"regularFont";
+    src: url(font/dandad-icons.woff);
+}
+
 h1{
     margin:0px;
 }
-h3,.huge_title{
+.huge_title{
     font-family: GT-Super-Display-Light;
-}
-p{
-    font-family:'Franklin Gothic Medium', arial;
 }
 
 .masthead{
@@ -21,7 +37,7 @@ p{
 }
 .huge_title{
     color: #ffffff;
-    font-size:60px;
+    font-size:70pt;
 }
 
 .message{
@@ -46,31 +62,37 @@ p{
 /* for the forward section */
 .forward{
     padding-top:80px;
-    background-color:#f2f2f2;
+    padding-bottom:80px;
+    background-color:white;
     color:black;
     width:100%;
     display:flex;
 }
+
+
 .left{
     font-family:GT-Super-Display-Super;
     writing-mode: vertical-rl;
-    font-size:40px;
+    font-size:70pt;
     color:black;
-    font-size:60px;
     margin-left:55px;
 }
 .right{
     width:75%;
-    padding-left: 280px;
-    padding-right:75px;
+    padding-left: 250px;
+    padding-right:73px;
+}
+.para,.boldpara{
+    margin-top:0px;
+    line-height: 22pt;
+    font-size: 15pt;
 }
 .para{
-    margin-top:0px;
-    line-height: 1.5;
-    font-size: 18px;
+    font-family: "regularFont";
 }
-.firstpara{
-    font-weight:bold;
+.boldpara{
+    font-family: "demiFont";
+    text-decoration: bold;
 }
 .names{
     font-style:italic;
@@ -83,5 +105,22 @@ p{
     display:flex;
 }
 .righthalf{
-    padding-left:50px;
+    padding-left:10px;
+}
+.index{
+    padding-top: 30px;
+}
+.links{
+    font-family: GT-Super-Display-Light;
+}
+/* for the footer */
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+.footerText{
+    font-size: 12pt;
+    text-align: center;
+    color: white;
 }
