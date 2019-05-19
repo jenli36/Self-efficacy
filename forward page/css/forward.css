@@ -1,56 +1,64 @@
 @font-face{
     font-family:GT-Super-Display-Light;
-    src: url("/font/GT-Super-Display-Light.woff");
+    src: url("../font/GT-Super-Display-Light.woff");
 }
 @font-face{
     font-family:GT-Super-Display-Super;
-    src: url("/font/GT-Super-Display-Super.woff");
+    src: url("../font/GT-Super-Display-Super.woff");
 }
 @font-face{
     font-family:heavyFont;
-    src: url("/font/272EE5_0_0.woff");
+    src: url("../font/272EE5_0_0.woff");
 }
 @font-face{
     font-family:mid-heavyFont;
-    src: url("/font/272EE5_1_0.woff");
+    src: url("../font/272EE5_1_0.woff");
 }
 @font-face{
     font-family:demiFont;
-    src: url("/font/272EE5_2_0.woff");
+    src: url("../font/272EE5_2_0.woff");
 }
 @font-face{
     font-family:regularFont;
-    src: url("/font/dandad-icons.woff");
+    src: url("../font/dandad-icons.woff");
 }
+/* clears all the default padding and margin */
 *{
     padding:0;
     margin:0;
 }
-
-.huge_title{
-    font-family: GT-Super-Display-Light,serif;
+.message,.explore,#team{
+    font-family: 'Franklin Gothic Medium';
 }
-
 .masthead{
-    padding:200px 0px 100px 0px;
+    padding:100px 0px 100px 0px;
     background-color:black;
 }
-
+#team{
+    padding-left:1225px;
+    text-orientation:sideways-right;
+    writing-mode: vertical-rl;
+    font-size:10pt;
+    color:white;
+}
 .huge_title{
+    font-family: GT-Super-Display-Super;
     color:white;
     font-size:70px;
 }
 
 .message{
-    font-size:18px;
+    font-size:15pt;
+    line-height: 18px;
     color: #ffffff;
     opacity: 0.9;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .explore{
     padding:15pt 34px;
+    font-weight:bold;
     background:transparent;
-    font-size:16px;
+    font-size:14px;
     text-align:center;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -77,14 +85,11 @@
     color:black;
     margin-left:0px;
     margin-left:40px;
-
 }
 
 .right{
     padding-left: 250px;
     padding-right:70px;
-    background-image:url("/image/constellation.png");
-    background-repeat: no-repeat;
 }
 
 .para,.boldpara{
@@ -99,12 +104,11 @@
 }
 /* setting the fonts for the paragraph */
 .para,.names{
-    font-family:regularFont,sans-serif;
+    font-family:regularFont;
 }
 
 .boldpara, .firstpara{
-    font-family: demiFont,sans-serif;
-    font-weight:bold;
+    font-family: demiFont;
 }
 .names{
     font-style:italic;
@@ -131,7 +135,7 @@
     padding-bottom:15px;
 }
 .links{
-    font-family: GT-Super-Display-Light,serif;
+    font-family: regularFont;
 }
 /* for the footer */
 footer{

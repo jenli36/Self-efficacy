@@ -1,0 +1,56 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.masthead{
+    padding:100px 0px 100px 0px;
+    background-color:black;
+}
+.sections,.subtitle {
+    padding:50px 70px;
+}
+
+.sections{
+    display:flex;
+}
+
+.banner{
+    color:white;
+    padding-left: 70px;
+}
+
+h1{
+    font-size: 70px;
+}
+h2 {
+    font-size:50px;
+}
+
+.followsection{
+    padding-top:100px;
+}
+p,.description{
+    margin-top:30px;
+    font-size: 15pt;
+    line-height:22pt;
+}
+.boldpara{
+    font-weight:bold;
+}
+.righthalf{
+    padding-left: 50px;
+}
+.row{
+    display:flex;
+    padding-bottom: 70px;
+}
+#shortpara{
+    width:60%
+}
+.left{
+    width:50%;
+}
+.right{
+    padding-left:50px;
+    width:50%
+}
