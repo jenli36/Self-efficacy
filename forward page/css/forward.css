@@ -20,13 +20,14 @@
 }
 @font-face{
     font-family:regularFont;
-    src: url("../font/dandad-icons.woff");
+    src: url("../font/reg.woff");
 }
 /* clears all the default padding and margin */
 *{
     padding:0;
     margin:0;
 }
+
 .message,.explore,#team{
     font-family: 'Franklin Gothic Medium';
 }
