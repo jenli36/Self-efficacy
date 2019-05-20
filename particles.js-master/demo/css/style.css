@@ -118,30 +118,33 @@ canvas{
   background-repeat: no-repeat;
 }
 
+.text-container {
+  padding-left:120px;
+}
+
 #big {
   color: white;
   font-family: GT-Super-Display-Super;
   font-size: 70px;
   max-width: 10ch;
-  margin-left: 55px;
   animation: fadein 3s;
   line-height: 100%;
 }
 
 #small {
-  margin-left: 55px;
-  font-size:16px;
-    color: #ffffff;
-    opacity: 0.9;
-    max-width: 50ch;
-    letter-spacing: 1px;
-    padding-bottom: 30px;
-    animation: fadein 3s;
+  font-family:mid-heavyFont;
+  font-size:14px;
+  color: #ffffff;
+  opacity: 0.9;
+  max-width: 50ch;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  animation: fadein 3s;
 }
 
 #message {
   color: white;
-  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium';
   font-size:8px;
   transform: rotate(90deg);
   position: absolute;
@@ -151,7 +154,6 @@ canvas{
   animation: fadein 3s;
 }
 
-
 .explore{
   padding:15px 34px;
   background:transparent;
@@ -160,8 +162,7 @@ canvas{
   font-style: unset;
   color: #ffffff;
   border: 2px solid #ffffff;
-  margin-left: 55px;
-  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium';
   animation: fadein 3s;
   transition-duration: 0.4s;
 }
@@ -183,33 +184,17 @@ html {
   background-color: #fff;
 }
 
-*{
-  padding:0;
-  margin:0;
-}
-
-.explore{
-  font-family: 'Franklin Gothic Medium';
-}
-.message{
-  font-family:mid-heavyFont;
-}
 .masthead{
   padding:200px 0px 100px 0px;
   background-color:black;
 }
+
 .huge_title{
   font-family: GT-Super-Display-Super;
   color:white;
   font-size:70px;
 }
-.message{
-  font-size:14pt;
-  line-height: 18px;
-  color: #ffffff;
-  opacity: 0.9;
-  padding-bottom: 40px;
-}
+
 .explore{
   padding:14pt 34px;
   font-weight:bold;
@@ -237,7 +222,7 @@ html {
 .left{
   font-family:GT-Super-Display-Super;
   writing-mode: vertical-rl;
-  font-size:150px;
+  font-size:120px;
   color:black;
   margin-left:0px;
   margin-left:90px;
