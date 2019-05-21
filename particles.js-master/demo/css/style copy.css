@@ -118,6 +118,24 @@ canvas{
   background-repeat: no-repeat;
 }
 
+#particles-js2{
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.explore {
+  position:absolute;
+}
+
+.forward {
+  position: absolute r;
+}
+
 .text-container {
   padding-left:120px;
 }
@@ -289,41 +307,5 @@ footer{
   }
   to {
       opacity:1;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .text-container {
-    padding-left: 20px;
-  }
-
-  #big {
-    font-size: 50px;
-    max-width: 8ch;
-  }
-
-  #small {
-    font-size: 12px;
-    max-width: 40ch;
-  }
-
-  #message {
-    top:40vh;
-  }
-
-  .forward_title {
-    font-size: 50%
-  }
-
-  .left {
-    margin-left: 20px;
-  }
-
-  .right {
-    padding-left: 50px;
-  }
-
-  .forward {
-    padding-top: 100px;
   }
 }
