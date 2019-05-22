@@ -122,13 +122,14 @@ canvas{
   color: white;
   font-family: GT-Super-Display-Super;
   font-size: 70px;
-  max-width: 10ch;
+  max-width: 8ch;
   animation: fadein 3s;
   line-height: 100%;
+  padding-bottom: 26px;
 }
 
 #small {
-  font-family:mid-heavyFont;
+  font-family:'Franklin Gothic Medium', sans-serif;
   font-size:14px;
   color: #ffffff;
   opacity: 0.9;
@@ -136,6 +137,7 @@ canvas{
   letter-spacing: 1px;
   padding-bottom: 30px;
   animation: fadein 3s;
+  line-height: 22px;
 }
 
 #message {
@@ -294,8 +296,8 @@ footer{
   }
 
   #big {
-    font-size: 50px;
-    max-width: 8ch;
+    font-size: 100px;
+    max-width: 2ch;
   }
 
   #small {

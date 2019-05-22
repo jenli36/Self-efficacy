@@ -642,9 +642,9 @@ var pJS = function(tag_id, params){
 
     /* update each particles param */
     pJS.fn.particlesUpdate();
-    // if (pJS.particles.array.length > 100) {  // reset
-    //   pJS.particles.array = pJS.particles.array.splice(0,50);
-    // }
+    if (pJS.particles.array.length > 10) {  // reset
+       pJS.particles.array = pJS.particles.array.splice(0,5);
+    }
     /* draw each particle */
     for(var i = 0; i < pJS.particles.array.length; i++){
       var p = pJS.particles.array[i];
