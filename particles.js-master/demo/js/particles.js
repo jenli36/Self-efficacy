@@ -602,6 +602,7 @@ var pJS = function(tag_id, params){
         pJS.fn.modes.bubbleParticle(p);
       }
 
+      // comment out the following to remove the repulse function. 
       if(isInArray('repulse', pJS.interactivity.events.onhover.mode) || isInArray('repulse', pJS.interactivity.events.onclick.mode)){
         pJS.fn.modes.repulseParticle(p);
       }
@@ -641,7 +642,9 @@ var pJS = function(tag_id, params){
 
     /* update each particles param */
     pJS.fn.particlesUpdate();
-
+    // if (pJS.particles.array.length > 100) {  // reset
+    //   pJS.particles.array = pJS.particles.array.splice(0,50);
+    // }
     /* draw each particle */
     for(var i = 0; i < pJS.particles.array.length; i++){
       var p = pJS.particles.array[i];
@@ -753,7 +756,7 @@ var pJS = function(tag_id, params){
   pJS.fn.modes.pushParticles = function(nb, pos){
 
     pJS.tmp.pushing = true;
-
+    //for(var i = 0; i < 1; i++) {  // add only one dot per click
     for(var i = 0; i < nb; i++){
       pJS.particles.array.push(
         new pJS.fn.particle(
