@@ -1,0 +1,39 @@
+@font-face{
+    font-family:GT-Super-Display-Light;
+    src: url("../font/GT-Super-Display-Light.woff");
+  }
+  @font-face{
+    font-family:GT-Super-Display-Super;
+    src: url("../font/GT-Super-Display-Super.woff");
+  }
+  @font-face{
+    font-family:heavyFont;
+    src: url("../font/272EE5_0_0.woff");
+  }
+  @font-face{
+    font-family:mid-heavyFont;
+    src: url("../font/272EE5_1_0.woff");
+  }
+  @font-face{
+    font-family:demiFont;
+    src: url("../font/272EE5_2_0.woff");
+  }
+  @font-face{
+    font-family:regularFont;
+    src: url("../font/reg.woff");
+  }
+
+.nav a {
+    float: right;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: demifont;
+  }
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+  }
