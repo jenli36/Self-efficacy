@@ -47,10 +47,17 @@ p,.description{
 #shortpara{
     width:60%
 }
-.left{
+.left, .right{
     width:50%;
 }
 .right{
-    padding-left:50px;
-    width:50%
+    padding-left:60px;
+}
+img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.image{
+    height:100%;
 }
