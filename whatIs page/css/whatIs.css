@@ -188,4 +188,21 @@ li {
     line-height: 30px;
 }
 
+button{
+    background-color: transparent;
+    border-color:black;
+    padding:15px 34px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    animation: fadein 3s;
+    transition-duration: 0.4s;
+    float: right;
+  }
+  button:hover{
+    background-color:black;
+    color:white;
+  }
 
+#letter {
+    padding-top: 200px;
+    padding-right: 80px;
+}
