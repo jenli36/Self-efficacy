@@ -62,7 +62,11 @@ a:hover {
 
 .boldtitle {
     font-size: 50px;
-    max-width: 20ch;
+    /* max-width: 20ch; */
+}
+
+.first{
+    width:100%;
 }
 
 .secondtitle {
@@ -76,9 +80,9 @@ a:hover {
 }
 
 .second {
-    padding-left: 180px;
-    padding-right: 180px;
-    width: 600px;
+    padding-left: 80px;
+    padding-right: 80px;
+    /* width: 600px */
 }
 .banner{
 
@@ -115,7 +119,7 @@ p,.description{
 .left, .right{
     width:40%;
     background-color: #F7F6F3;
-    height: 400px;
+    height: 570px;
 }
 .right{
     padding-left:60px;
@@ -129,6 +133,18 @@ img{
     height:100%;
 }
 
+#text {
+    width: 40%;
+    background-color: #F7F6F3;
+}
+
+.eachtitle {
+    margin-top: 100px;
+}
+
+.eachtext {
+    margin-top: 100px;
+}
 
 .slider-holder
 {
