@@ -45,31 +45,31 @@
     <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-                    <div class="eachslide">
-                        <div class ="leftpart">
-                                <img src="image/master.png">  
-                        </div>
-                        <div class ="rightpart1">
-                                <h3 class="slidetitle">SELF-EFFICACY VS MOTIVATION </h3>
-                                <p class="slidetext">Similarly, although self-efficacy and motivation are deeply entwined, they are also two separate constructs.
-                                     Self-efficacy is based on an individual’s belief in their own capacity to achieve, while motivation is based on the individual’s desire to achieve. 
-                                     Clearly, those with high self-efficacy likely have high motivation and vice versa, but it is not a direct correlation.   
-                            </p>
-                        </div>
+                <div class="eachslide">
+                    <div class ="leftpart">
+                        <img src="image/master.png">  
+                    </div>
+                    <div class ="rightpart1">
+                        <h3 class="slidetitle">SELF-EFFICACY VS MOTIVATION </h3>
+                        <p class="slidetext">Similarly, although self-efficacy and motivation are deeply entwined, they are also two separate constructs.
+                                Self-efficacy is based on an individual’s belief in their own capacity to achieve, while motivation is based on the individual’s desire to achieve. 
+                                Clearly, those with high self-efficacy likely have high motivation and vice versa, but it is not a direct correlation.   
+                        </p>
                     </div>
                 </div>
+            </div>
     
             <div class="mySlides fade">
                 <div class="eachslide">
                     <div class ="leftpart2">
-                    <h3 class="slidetitle">SELF-EFFICACY VS RESILIENCE </h3>
-                    <p class="slidetext">While experiences of success certainly make up a large portion of self-efficacy development, 
-                        there is also room for failure. Those with a high level of self-efficacy are not only more likely to succeed, 
-                        they are also more likely to bounce back and recover from failure. This is the ability at the heart of resilience, 
-                        and it is greatly impacted by self-efficacy.
+                        <h3 class="slidetitle">SELF-EFFICACY VS RESILIENCE </h3>
+                        <p class="slidetext">While experiences of success certainly make up a large portion of self-efficacy development, 
+                            there is also room for failure. Those with a high level of self-efficacy are not only more likely to succeed, 
+                            they are also more likely to bounce back and recover from failure. This is the ability at the heart of resilience, 
+                            and it is greatly impacted by self-efficacy.
                         </p>
                     </div>
-                    <div class ="rightpart">
+                <div class ="rightpart">
                             <img src="image/master.png">  
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         </p>
                     </div>
                     <div class ="rightpart">
-                            <img src="image/master.png">  
+                        <img src="image/master.png">  
                     </div>
                 </div>
             </div>
@@ -123,33 +123,33 @@
     
     <script>
     var slideIndex = 1;
-showSlides(slideIndex);
+    showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+    }
     </script>
     
 
