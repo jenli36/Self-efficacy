@@ -2,13 +2,52 @@
     font-family:Noe;
     src: url("../../Typeface/NoeDisplay.otf");
 }
+@font-face{
+    font-family:FranklinGothic;
+    src: url("../../Typeface/FranklinGothic");
+  }
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* navigation */
+ul {
+    padding:20px 70px 20px 0px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a{
+    display:block;
+    font-size:15px;
+    color: #666;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: FranklinGothic, sans-serif;
+}
+
+li a:hover:not(.active) {
+    color:black;
+}
+
+li a.active {
+    color: white;
+    background-color: black;
+}
+
 h1{
     font-family:Noe;
     font-size:45px;
     max-width: 13ch;
 }
 p{
-    font-family: 'Franklin Gothic', sans-serif;
+    font-family: FranklinGothic, sans-serif;
     font-size:15px;
     line-height:22px;
     padding-top:22px;
@@ -17,21 +56,26 @@ p{
     font-style:italic;
 }
 
-*{
-    margin:0px;
-    padding:0px;
-}
+
 .letter{
-    padding-left:70px;
-    padding-top:150px;
+    padding-top:80px;
     display:flex;
     height:auto;
 }
-.left{
-    background-image:url(../../illustrations/team.png);  
+.left {
+    padding-left:70px;
+    width:60%;
 }
-
 .right{
+    width:40%;
+    padding-right:70px;
+}
+.image_container{
     width:50%;
-    padding-left: 100px;
+    height:100%;
+    object-fit: contain;
+}
+img{
+    height:100%;
+    width:100%;
 }

@@ -1,50 +1,44 @@
 @font-face{
-    font-family:GT-Super-Display-Light;
-    src: url("../font/GT-Super-Display-Light.woff");
-  }
-  @font-face{
-    font-family:GT-Super-Display-Super;
-    src: url("../font/GT-Super-Display-Super.woff");
-  }
-  @font-face{
-    font-family:heavyFont;
-    src: url("../font/272EE5_0_0.woff");
-  }
-  @font-face{
-    font-family:mid-heavyFont;
-    src: url("../font/272EE5_1_0.woff");
-  }
-  @font-face{
-    font-family:demiFont;
-    src: url("../font/272EE5_2_0.woff");
-  }
-  @font-face{
-    font-family:regularFont;
-    src: url("../font/reg.woff");
-  }
+    font-family:FranklinGothic;
+    src:url("../../Typeface/FranklinGothic");
+}
 @font-face {
     font-family:Noe;
     src:url("../../Typeface/NoeDisplay.otf");
 }
-.nav a {
-    float: right;
-    color: grey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: demifont;
-  }
-
-a:hover {
-    color: black;
-    text-decoration: underline;
-  }
-
 
 *{
     margin:0px;
     padding:0px;
+}
+
+/* navigation */
+#links {
+    padding:20px 70px 20px 0px;
+    list-style-type: none;
+    overflow: hidden;
+}
+  
+.custom {
+    float: right;
+}
+  
+li a{
+    display:block;
+    font-size:15px;
+    color: #666;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: FranklinGothic, sans-serif;
+}
+  
+li a:hover:not(.active) {
+    color:black;
+}
+  
+li a.active {
+    color: white;
+    background-color: black;
 }
 
 .sections,.subtitle {
@@ -60,7 +54,7 @@ a:hover {
 }
 
 .light {
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family:FranklinGothic, sans-serif;
     font-size: 15px;
 }
 
@@ -92,7 +86,7 @@ a:hover {
     padding-left: 80px;
     padding-right: 80px;
     /* width: 600px */
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family:FranklinGothic, sans-serif;
 }
 .banner{
 
@@ -125,7 +119,7 @@ p,.description{
 }
 
 .lightpara {
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family:FranklinGothic, sans-serif;
     width: 40%;
     font-size: 15px;
 }
@@ -160,7 +154,7 @@ img{
 
 .eachtext {
     margin-top: 60px;
-    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-family: FranklinGothic, sans-serif;
     font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
@@ -184,7 +178,7 @@ img{
 
 li {
     font-size: 15px;
-    font-family: 'Franklin Gothic Medium',  sans-serif;
+    font-family: FranklinGothic, sans-serif;
     line-height: 30px;
 }
 
@@ -192,17 +186,45 @@ button{
     background-color: transparent;
     border-color:black;
     padding:15px 34px;
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    animation: fadein 3s;
+    font-family: FranklinGothic, sans-serif;
     transition-duration: 0.4s;
     float: right;
-  }
-  button:hover{
+}
+
+button:hover{
     background-color:black;
     color:white;
-  }
+}
 
 #letter {
     padding-top: 200px;
     padding-right: 80px;
+    padding-bottom:200px;
+
+}
+/* footer */
+h3{
+    font-family: FranklinGothic;
+}
+#end{
+    padding-top:25px;
+    padding-bottom:25px;
+    background-color:black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+  }
+.leftbot{
+    padding-left:70px;
+    max-width: 45ch;
+}
+.rightbot{
+    width:50%;
+    padding-right:70px;
+}
+.bottom{
+    font-size:14px;
+}
+#credit, #ack{
+    padding-bottom: 10px;
 }

@@ -2,94 +2,166 @@
   font-family:Noe;
   src: url("../../Typeface/NoeDisplay.otf");
 }
+@font-face{
+  font-family:FranklinGothic;
+  src: url("../../Typeface/FranklinGothic");
+}
+
+/* setting the font */
 
 *{
   padding: 0px;
   margin: 0px;
-  width:100%;
 }
+
+/* navigation */
+ul {
+  padding:20px 70px 20px 0px;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a{
+  display:block;
+  font-size:15px;
+  color: #666;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: FranklinGothic, sans-serif;
+}
+
+li a:hover:not(.active) {
+  color:black;
+}
+
+li a.active {
+  color: white;
+  background-color: black;
+}
+
+/* banner section */
 .banner{
-  padding-left:70px;
-  height: auto;
   display:flex;
+  justify-content: space-between;
 }
+
 h1{
-  font-family:Noe;
+  font-family:Noe,sans-serif;
   font-size:50px;
 }
 
-h2{
-  font-family: 'Franklin Gothic',sans-serif;
+.background{
+  padding:20px;
+  background-color: #f7f6f3;
+}
+
+.link{
   font-size:25px;
+  font-family: 'Franklin Gothic Medium',sans-serif;
+  color:black;
+  text-decoration: none;
+}
+
+hr{
+  width:7%;
+  border:2px solid;
+}
+
+h3{
+  font-family: 'Franklin Gothic Medium',sans-serif;
 }
 p{
-  font-family:'Franklin Gothic', sans-serif;
-  font-size: 15px;
+  font-family: FranklinGothic, sans-serif;
+}
+h3,p{
+  font-size:15px;
   line-height:22px;
 }
 .small {
   padding-top:30px;
+  max-width: 58ch;
 }
 .left{
+  padding-left:70px;
   padding-top:180px;
 }
 .right{
-    width:100%;
-    height:100%;
-    object-fit: contain;
+  width:50%;
+  padding-top:80px;
+  height:auto;
+  object-fit: contain;
 }
 img{
-    height:100%;
+  height:100%;
+  width:100%;
 }
 
-.title{
-  width: 50%;
-}
-
+/* resources section */
 .resources{
-  padding-left:70px;
   padding-top:100px;
   padding-bottom:300px;
+}
+.title, .row{
+  padding-left:70px;
+  padding-right:70px;
+}
+
+.row{
+  padding-top:50px;
+  display:flex;
+  justify-content: space-between;
 }
 .description{
   padding-top:15px;
   max-width: 36ch;
 }
-.row{
-  padding-top: 50px;
-  display:flex;
-}
+
 
 /* button at the bottom */
 button{
+  font-family: FranklinGothic, sans-serif;
   background-color: transparent;
   border-color:black;
   padding:15px 34px;
-  font-family: 'Franklin Gothic', sans-serif;
-  animation: fadein 3s;
   transition-duration: 0.4s;
 }
+
+#whatis{
+  padding-top:100px;
+  padding-right:70px;
+  float:right;
+}
+
 button:hover{
   background-color:black;
   color:white;
 }
 
-#whatis{
-  padding-right:135px;
-  padding-top:100px;
-  float:right;
-  width:20%;
-}
 
-/* navigation */
-.nav{
-    color: grey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: Noe;
+/* footer */
+footer{
+  padding-top:25px;
+  padding-bottom:25px;
+  background-color:black;
+  color:white;
+  display: flex;
+  justify-content: space-between;
 }
-a:hover {
-    color: black;
+.leftbot{
+  padding-left:70px;
+  max-width: 45ch;
+}
+.rightbot{
+  width:50%;
+  padding-right:70px;
+}
+.bottom{
+  font-size:14px;
+}
+#credit, #ack{
+  padding-bottom: 10px;
 }
