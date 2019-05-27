@@ -60,10 +60,9 @@ li a.active {
 }
 
 .boldtitle {
-    font-size: 80px;
-    max-width: 10ch;
+    font-size: 50px;
+    max-width: 15ch;
     font-family: Noe;
-    padding-top:30px;
 }
 
 .first{
@@ -81,9 +80,6 @@ li a.active {
     padding-top: 100px;
 }
 
-.col-5 {
-    padding-right: 20px;
-}
 
 .second {
     padding-left: 80px;
@@ -118,8 +114,10 @@ p,.description{
 }
 .row{
     display:flex;
-    padding-bottom: 150px;
+    padding-bottom: 30px;
+    height: 600px;
 }
+
 
 .lightpara {
     font-family:FranklinGothic, sans-serif;
@@ -148,19 +146,24 @@ img{
     background-color: #F7F6F3;
 }
 
+.text_container {
+
+    padding-right: 30px;
+}
 .eachtitle {
-    margin-top: 60px;
+    margin-top: 40px;
     font-family: Noe;
-    padding-left: 20px;
-    padding-left: 30px;
+    font-size: 25px;
+    background-color: #F7F6F3;
+    height: 60px;
+    width: 500px;
 }
 
 .eachtext {
-    margin-top: 60px;
+    margin-top: 40px;
     font-family: FranklinGothic, sans-serif;
     font-size: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 120ch;
 }
 
 .lastsection {
@@ -246,10 +249,6 @@ h3{
     padding-bottom: 60px;
 }
 
-.slideimage {
-    padding-top: 80px;
-}
-
 .slidetext {
     font-family: 'Franklin Gothic', sans-serif;
     font-size: 15px;
@@ -257,15 +256,16 @@ h3{
 }
 
 .rightpart1 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 80px;
+    text-align: right;
 }
 .leftpart2 {
-    padding-left: 100px;
-    padding-right:100px;
+    padding-left: 120px;
 }
 
-
+.leftpart {
+    padding-right: 120px;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -285,9 +285,9 @@ h3{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: grey;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -302,6 +302,7 @@ h3{
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  color:white;
 }
 
 /* Caption text */
