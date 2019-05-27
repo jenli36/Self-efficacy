@@ -8,9 +8,6 @@
 }
 
 /* setting the font */
-p, li, button{
-  font-family: FranklinGothic, sans-serif;
-}
 
 *{
   padding: 0px;
@@ -19,8 +16,7 @@ p, li, button{
 
 /* navigation */
 ul {
-  padding:20px 0px;
-  margin:0;
+  padding:20px 70px 20px 0px;
   list-style-type: none;
   overflow: hidden;
 }
@@ -35,6 +31,7 @@ li a{
   color: #666;
   padding: 10px 30px;
   text-decoration: none;
+  font-family: FranklinGothic, sans-serif;
 }
 
 li a:hover:not(.active) {
@@ -77,7 +74,9 @@ hr{
 h3{
   font-family: 'Franklin Gothic Medium',sans-serif;
 }
-
+p{
+  font-family: FranklinGothic, sans-serif;
+}
 h3,p{
   font-size:15px;
   line-height:22px;
@@ -124,6 +123,7 @@ img{
 
 /* button at the bottom */
 button{
+  font-family: FranklinGothic, sans-serif;
   background-color: transparent;
   border-color:black;
   padding:15px 34px;
