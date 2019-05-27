@@ -60,9 +60,10 @@ li a.active {
 }
 
 .boldtitle {
-    font-size: 50px;
-    max-width: 15ch;
+    font-size: 80px;
+    max-width: 10ch;
     font-family: Noe;
+    padding-top:30px;
 }
 
 .first{
@@ -77,6 +78,7 @@ li a.active {
 
 .nextsection {
     padding-left: 100px;
+    padding-top: 100px;
 }
 
 .col-5 {
@@ -233,6 +235,7 @@ h3{
 .eachslide {
     display: flex;
     background-color: #F7F6F3;
+    height: 600px;
 }
 
 .slidetitle {
@@ -243,6 +246,10 @@ h3{
     padding-bottom: 60px;
 }
 
+.slideimage {
+    padding-top: 80px;
+}
+
 .slidetext {
     font-family: 'Franklin Gothic', sans-serif;
     font-size: 15px;
@@ -250,11 +257,14 @@ h3{
 }
 
 .rightpart1 {
-    padding-right: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .leftpart2 {
-    padding-left: 80px;
+    padding-left: 100px;
+    padding-right:100px;
 }
+
 
 * {box-sizing:border-box}
 
