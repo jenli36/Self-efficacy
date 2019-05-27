@@ -8,17 +8,17 @@
   <title>What is Self-Efficacy</title>
 
   <!-- Custom styles for this template -->
-  <link href="css/whatIs.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="css/whatIs.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
-    <div class="nav">
+    <div class="navigation">
         <ul id="links">
-            <li class="custom"><a href="../letter page/letter.html">Letter from Creators</a></li>
-            <li class="custom"><a href="../discovery page/discovery.html">Resources</a></li>
-            <li class="custom"><a class ="active"href="#whatIs">What is Self-efficacy</a></li>
+            <li class="tabs"><a href="../letter page/letter.html">Letter from Creators</a></li>
+            <li class="tabs"><a href="../discovery page/discovery.html">Resources</a></li>
+            <li class="tabs"><a class ="active"href="#whatIs">What is Self-efficacy</a></li>
         </ul>
     </div>
 
@@ -42,36 +42,118 @@
         </div>
     </section>
 
-    <div class="w3-content w3-display-container">
-      <img class="mySlides" src="image/test1.png" style="width:100%">
-      <img class="mySlides" src="image/test2.png" style="width:100%">
+    <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                    <div class="eachslide">
+                        <div class ="leftpart">
+                                <img src="image/master.png">  
+                        </div>
+                        <div class ="rightpart1">
+                                <h3 class="slidetitle">SELF-EFFICACY VS MOTIVATION </h3>
+                                <p class="slidetext">Similarly, although self-efficacy and motivation are deeply entwined, they are also two separate constructs.
+                                     Self-efficacy is based on an individual’s belief in their own capacity to achieve, while motivation is based on the individual’s desire to achieve. 
+                                     Clearly, those with high self-efficacy likely have high motivation and vice versa, but it is not a direct correlation.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
     
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    </div>
+            <div class="mySlides fade">
+                <div class="eachslide">
+                    <div class ="leftpart2">
+                    <h3 class="slidetitle">SELF-EFFICACY VS RESILIENCE </h3>
+                    <p class="slidetext">While experiences of success certainly make up a large portion of self-efficacy development, 
+                        there is also room for failure. Those with a high level of self-efficacy are not only more likely to succeed, 
+                        they are also more likely to bounce back and recover from failure. This is the ability at the heart of resilience, 
+                        and it is greatly impacted by self-efficacy.
+                        </p>
+                    </div>
+                    <div class ="rightpart">
+                            <img src="image/master.png">  
+                    </div>
+                </div>
+            </div>
+          
+            <div class="mySlides fade">
+                    <div class="eachslide">
+                        <div class ="leftpart">
+                                <img src="image/master.png">  
+                        </div>
+                        <div class ="rightpart1">
+                                <h3 class="slidetitle">SELF-EFFICACY VS MOTIVATION </h3>
+                                <p class="slidetext">Similarly, although self-efficacy and motivation are deeply entwined, they are also two separate constructs.
+                                     Self-efficacy is based on an individual’s belief in their own capacity to achieve, while motivation is based on the individual’s desire to achieve. 
+                                     Clearly, those with high self-efficacy likely have high motivation and vice versa, but it is not a direct correlation.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+            <div class="mySlides fade">
+                <div class="eachslide">
+                    <div class ="leftpart2">
+                    <h3 class="slidetitle">SELF-EFFICACY VS RESILIENCE </h3>
+                    <p class="slidetext">While experiences of success certainly make up a large portion of self-efficacy development, 
+                        there is also room for failure. Those with a high level of self-efficacy are not only more likely to succeed, 
+                        they are also more likely to bounce back and recover from failure. This is the ability at the heart of resilience, 
+                        and it is greatly impacted by self-efficacy.
+                        </p>
+                    </div>
+                    <div class ="rightpart">
+                            <img src="image/master.png">  
+                    </div>
+                </div>
+            </div>
+                      
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+          </div>
     
     <script>
     var slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      x[slideIndex-1].style.display = "block";  
-    }
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
     </script>
     
 
-    <div class="next">
+    <div class="nextsection">
         <h3 class="boldtitle">Self-Efficacy Development</h3>
         <p class="lightpara">Self-efficacy can be developed and formed in more multiple ways. Four major components 
             that heavily influence your self-efficacy are mastery experience, social modeling, verbal 
