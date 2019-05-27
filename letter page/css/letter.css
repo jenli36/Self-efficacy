@@ -2,13 +2,22 @@
     font-family:Noe;
     src: url("../../Typeface/NoeDisplay.otf");
 }
+@font-face{
+    font-family:FranklinGothic;
+    src: url("../../Typeface/FranklinGothic");
+  }
+*{
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
 h1{
     font-family:Noe;
     font-size:45px;
     max-width: 13ch;
 }
 p{
-    font-family: 'Franklin Gothic', sans-serif;
+    font-family: FranklinGothic, sans-serif;
     font-size:15px;
     line-height:22px;
     padding-top:22px;
@@ -17,20 +26,19 @@ p{
     font-style:italic;
 }
 
-*{
-    margin:0px;
-    padding:0px;
-}
+
 .letter{
-    padding-left:70px;
     padding-top:150px;
     display:flex;
     height:auto;
 }
-
+.left {
+    padding-left:70px;
+    width:60%;
+}
 .right{
-    width:50%;
-    padding-left: 100px;
+    width:40%;
+    padding-right:70px;
 }
 .image_container{
     width:100%;
