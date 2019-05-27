@@ -46,7 +46,7 @@ li a.active {
 /* banner section */
 .banner{
   display:flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 h1{
@@ -90,7 +90,7 @@ h3,p{
   padding-top:180px;
 }
 .right{
-  width:50%;
+  width:60%;
   padding-top:80px;
   height:auto;
   object-fit: contain;

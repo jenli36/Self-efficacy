@@ -63,8 +63,10 @@ p{
     height:auto;
 }
 .left {
-    padding-left:70px;
     width:60%;
+}
+.title{
+    padding-left:70px;
 }
 .right{
     width:40%;
