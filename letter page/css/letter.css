@@ -62,9 +62,11 @@ p{
     display:flex;
     height:auto;
 }
+
 .left {
     width:60%;
 }
+
 .title{
     padding-left:70px;
 }

@@ -8,7 +8,7 @@ public class Circle{
   Circle(String building){
     this.building = building;
     if (building.equals("Allen")) { // prints to the right half
-      location = new PVector(int(random(0, width)), int(random(200, height)));    
+      location = new PVector(int(random(100, width-100)), int(random(400, height)));    
     }
     velocity = new PVector(0,0);
     acceleration = new PVector(0,0);

@@ -8,23 +8,19 @@ SoundFile music;
 PFont prompt;
 PFont current;
 int count = 0; // # of votes
-boolean read;
-int time;
 
 void setup() {
   // screensize
   fullScreen();
   // portName that Arduino IDE is connecting to
-  String portName = Serial.list()[3];
+  String portName = Serial.list()[6];
   // sets up the serial
   myPort = new Serial(this, portName, 9600);
   // sets up the fonts
   prompt = createFont("AvenirNext-Bold", 45);
   current = createFont("AvenirNext-Bold", 45);
   music = new SoundFile(this, "sound.mp3");
-  music.amp(0.7); // the volumn  value is [0.0, 1.0] 
-  read = true;
-  time = millis();
+  music.amp(0.5); // the volumn  value is [0.0, 1.0] 
 }
 
 void draw() {
@@ -32,15 +28,15 @@ void draw() {
   noCursor();  // does not show cursor
   fill(255); // the color of the prompt
   float x = width / 2;
-  float y = 350;
+  float y = 460;
   textAlign(CENTER, BOTTOM);
   pushMatrix();
   translate(x,y);
   // setting for Gates
   textFont(prompt, 40);
   // Setting for Gates
-  text("I HAVE ONCE", 0, 0);
-  text("DOUBTED", 0, 65);
+  text("I HAVE ONCE", 0, 10);
+  text("DOUBTED", 0, 60);
   text("MY  EDUCATIONAL", 0, 150);
   text("SKILL  SET", 0, 230);
   // Displays the current number of people who said yes
@@ -69,21 +65,26 @@ void draw() {
     }
   }
 }
-
+void keyPressed(){
+  if (keyCode ==LEFT || keyCode == RIGHT) {
+    music.play();
+    Circle c = new Circle("Allen");
+    circles.add(c);
+    count++;
+  } else {
+    count = 0;
+    circles.clear();
+  }
+}
 void serialEvent(Serial myPort) {
    if (myPort.available() > 0) {
     val = myPort.readStringUntil('\n');
-    if (val != null && read) {
-      read = false;
-      time = millis();
+    if (val != null) {
       music.play();
       Circle c = new Circle("Allen");
       circles.add(c);
       count++;
     }
 
-  }
-  if (time + 3000 > millis()) {
-    read = true;
   }
 }
