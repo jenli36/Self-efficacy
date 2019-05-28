@@ -46,17 +46,12 @@ li a.active {
 /* banner section */
 .banner{
   display:flex;
-  /* justify-content: space-between; */
+  padding-right:0px;
 }
 
 h1{
   font-family:Noe,sans-serif;
   font-size:50px;
-}
-
-.background{
-  padding:20px;
-  background-color: #f7f6f3;
 }
 
 .link{
@@ -71,26 +66,21 @@ hr{
   border:2px solid;
 }
 
-h3{
-  font-family: 'Franklin Gothic Medium',sans-serif;
+h3, p{
+  font-family: FranklinGothic,sans-serif;
 }
+
 p{
-  font-family: FranklinGothic, sans-serif;
-}
-h3,p{
   font-size:15px;
   line-height:22px;
 }
-.small {
-  padding-top:30px;
-  max-width: 58ch;
-}
+
 .left{
   padding-left:70px;
-  padding-top:180px;
+  padding-top:300px;
 }
 .right{
-  width:60%;
+  width:70%;
   padding-top:80px;
   height:auto;
   object-fit: contain;
@@ -100,10 +90,21 @@ img{
   width:100%;
 }
 
+/* testing background setting */
+.background{
+  padding:20px;
+  background-color: #f7f6f3;
+}
+
 /* resources section */
 .resources{
   padding-top:100px;
   padding-bottom:300px;
+}
+.small {
+  padding-top:15px;
+  padding-bottom:100px;
+  max-width: 76ch;
 }
 .title, .row{
   padding-left:70px;
@@ -111,7 +112,7 @@ img{
 }
 
 .row{
-  padding-top:50px;
+  padding-bottom:80px;
   display:flex;
   justify-content: space-between;
 }
@@ -145,11 +146,15 @@ button:hover{
 /* footer */
 footer{
   padding-top:25px;
-  padding-bottom:25px;
+  padding-bottom:50px;
   background-color:black;
   color:white;
   display: flex;
   justify-content: space-between;
+}
+h3{
+  font-size:12px;
+  line-height:22px;
 }
 .leftbot{
   padding-left:70px;
@@ -160,7 +165,7 @@ footer{
   padding-right:70px;
 }
 .bottom{
-  font-size:14px;
+  font-size:12px;
 }
 #credit, #ack{
   padding-bottom: 10px;
