@@ -181,27 +181,30 @@ button:hover{
 
 /* footer */
 h3{
-    font-family: FranklinGothic;
+    font-family:'Franklin Gothic Medium', sans-serif;
     font-size:15px;
 }
-#end{
+
+footer{
     padding-top:25px;
     padding-bottom:25px;
     background-color:black;
     color:white;
     display: flex;
     justify-content: space-between;
-  }
+}
 .leftbot{
     padding-left:70px;
-    max-width: 45ch;
+    max-width: 50ch;
 }
 .rightbot{
-    width:50%;
+    width:55%;
     padding-right:70px;
 }
 .bottom{
+    font-family: FranklinGothic,sans-serif;
     font-size:14px;
+    line-height:22px;
 }
 #credit, #ack{
     padding-bottom: 10px;
@@ -379,4 +382,4 @@ img{
   .tabs > a:focus:before {
     visibility: visible;
     transform: scaleX(1);
-  }
+}
