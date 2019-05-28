@@ -41,145 +41,111 @@ li a.active {
     background-color: black;
 }
 
-.sections,.subtitle {
-    padding:50px 70px;
-}
 
+/* setting for the intro section */
+.first, .second{
+    width:50%;
+}
 .intro{
     padding-top: 100px;
     display:flex;
-    width: 100%;
     padding-left: 100px;
-    padding-right: 80px;
+    padding-right: 100px;
     padding-bottom: 100px;
 }
-
-.light {
+.bold, .light{
     font-family:FranklinGothic, sans-serif;
-    font-size: 15px;
+    font-size:15px;
+    line-height:22px;
+
+}
+.bold {
+    padding-top:18px;
+    font-weight:bold;
+}
+.light {
+    padding-top:22px;
 }
 
+/* setting for nextseciton */
+.nextsection {
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom:100px;
+}
 .boldtitle {
-    font-size: 50px;
-    max-width: 15ch;
     font-family: Noe;
+    font-size: 50px;
+    max-width: 12ch;
+    padding-bottom:30px;
 }
-
-.first{
-    width:100%;
+.lightpara{
+    font-family: FranklinGothic,sans-serif;
+    font-size:15px;
+    line-height:22px;
+    max-width:66ch;
 }
-
 
 .sectiontitle {
     font-size: 25px;
     padding-top: 20px;
 }
 
-.nextsection {
-    padding-left: 100px;
-    padding-top: 100px;
-}
-
-
-.second {
-    padding-left: 80px;
-    padding-right: 80px;
-    /* width: 600px */
-    font-family:FranklinGothic, sans-serif;
-}
-.banner{
-
-    color:black;
-    padding-left: 70px;
-}
-
-h1{
-    font-size: 70px;
-}
-h2 {
-    font-size:50px;
-}
-
-
-p,.description{
-    margin-top:30px;
-    font-size: 15pt;
-    line-height:22pt;
-}
-.bold{
-    font-weight:bold;
-}
-.righthalf{
-    padding-left: 50px;
-}
+/* setting for the 4 development */
 .row{
     display:flex;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
     height: 600px;
 }
-
-
-.lightpara {
-    font-family:FranklinGothic, sans-serif;
-    width: 40%;
-    font-size: 15px;
-}
-.left, .right{
-    width:40%;
-    background-color: #F7F6F3;
-    height: 570px;
-}
-.right{
-    padding-left:60px;
-}
-img{
+.image_container2{
     width:100%;
     height:100%;
     object-fit: contain;
+
 }
-.image{
+.img2{
     height:100%;
 }
 
-#text {
-    width: 40%;
+.image_container2.rightimage{
+    padding-left:50px;
+}
+.text_container,.text_container2 {
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:50px;
     background-color: #F7F6F3;
 }
-
-.text_container {
-
-    padding-right: 30px;
+.text_container{
+    margin-left:80px;
+}
+.text_container2{
+    margin-right:80px;
 }
 .eachtitle {
-    margin-top: 40px;
+    font-family:'Franklin Gothic Medium',sans-serif;
+    padding-top:40px;
     font-family: Noe;
     font-size: 25px;
-    background-color: #F7F6F3;
-    height: 60px;
-    width: 500px;
 }
 
 .eachtext {
-    margin-top: 40px;
+    padding-top:50px;
     font-family: FranklinGothic, sans-serif;
     font-size: 15px;
-    max-width: 120ch;
+    line-height:22px;
+    max-width: 83ch;
 }
 
 .lastsection {
+    margin-top:100px;
     padding-top: 100px;
     display:flex;
-    width: 100%;
+    justify-content: space-between;
     padding-left: 100px;
     padding-right: 80px;
     background-color: #F7F6F3;
-    height: 450px;
-    padding-bottom: 200px;
-}
-
-
-.list {
-    padding-left: 250px;
+    padding-bottom: 100px;
 }
 
 li {
@@ -203,14 +169,16 @@ button:hover{
 }
 
 #letter {
-    padding-top: 200px;
+    padding-top: 100px;
     padding-right: 80px;
     padding-bottom:200px;
 
 }
+
 /* footer */
 h3{
     font-family: FranklinGothic;
+    font-size:15px;
 }
 #end{
     padding-top:25px;
@@ -235,43 +203,63 @@ h3{
     padding-bottom: 10px;
 }
 
+/* slideshow setting */
 .eachslide {
     display: flex;
     background-color: #F7F6F3;
-    height: 600px;
+    height:500px;
+}
+.leftText{
+    width:50%;
+    padding-left:120px;
+}
+.rightText{
+    width:50%;
+    padding-right:120px;
 }
 
-.slidetitle {
-    padding-top: 150px;
+/* setting for the image in slideshow */
+.image_container{
+    padding-top:60px;
+    padding-right:100px;
+    padding-left:100px;
+    width:50%;
+    height:100%;
+    object-fit: contain;
+}
+
+img{
+    height:100%;
+}
+
+
+/* setting the font-fam,font-size,padding for top&bottom for text on slides */
+
+.slidetitle{
+    padding-top:160px;
     font-family: 'Franklin Gothic Medium', sans-serif;
     max-width: 15ch;
     font-size: 40px;
-    padding-bottom: 60px;
+    padding-bottom:30px;
+    width:500px;
 }
+
 
 .slidetext {
-    font-family: 'Franklin Gothic', sans-serif;
+    font-family: FranklinGothic, sans-serif;
     font-size: 15px;
-    max-width: 180ch;
+    line-height:22px;
+    max-width: 200ch;
+    width:500px;
 }
 
-.rightpart1 {
-    padding-right: 80px;
-    text-align: right;
-}
-.leftpart2 {
-    padding-left: 120px;
-}
 
-.leftpart {
-    padding-right: 120px;
-}
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  margin-top: 200px;
-  width: 100%;
+  /* margin-top: 100px;
+  width: 100%; */
   position: relative;
   margin: auto;
 }
