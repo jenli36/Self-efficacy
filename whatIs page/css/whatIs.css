@@ -40,6 +40,11 @@ li a.activate {
     color: black;
     font-style: inherit;
 }
+li {
+    font-size: 15px;
+    font-family: FranklinGothic, sans-serif;
+    line-height: 30px;
+}
 
 .sections,.subtitle {
     padding:50px 70px;
@@ -179,12 +184,6 @@ img{
 
 .list {
     padding-left: 250px;
-}
-
-li {
-    font-size: 15px;
-    font-family: FranklinGothic, sans-serif;
-    line-height: 30px;
 }
 
 button{
@@ -371,7 +370,7 @@ h3{
 .tabs > a:before {
     content: "";
     position: absolute;
-    width: 50%;
+    width: 35%;
     height: 3px;
     bottom: 0;
     vertical-align: middle;
