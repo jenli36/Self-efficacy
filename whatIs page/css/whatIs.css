@@ -7,6 +7,11 @@
     src:url("../../Typeface/NoeDisplay.otf");
 }
 
+@font-face{
+    font-family:Demi;
+    src: url("../../Typeface/bold.TTF");
+  }
+
 *{
     margin:0px;
     padding:0px;
@@ -38,8 +43,9 @@ li a:hover:not(.active) {
   
 li a.activate {
     color: black;
-    font-style: inherit;
-}
+    font-size: 16px;
+    font-family: Demi;
+  }
 li {
     font-size: 15px;
     font-family: FranklinGothic, sans-serif;
@@ -51,10 +57,14 @@ li {
 .first, .second{
     width:50%;
 }
+
+.second {
+    max-width: 70ch;
+}
 .intro{
     padding-top: 100px;
     display:flex;
-    padding-left: 100px;
+    padding-left: 70px;
     padding-right: 100px;
     padding-bottom: 100px;
 }
@@ -74,7 +84,7 @@ li {
 
 /* setting for nextseciton */
 .nextsection {
-    padding-left: 100px;
+    padding-left: 70px;
     padding-top: 100px;
     padding-bottom:100px;
 }
@@ -151,7 +161,7 @@ li {
     padding-top: 100px;
     display:flex;
     justify-content: space-between;
-    padding-left: 100px;
+    padding-left: 70px;
     padding-right: 80px;
     background-color: #F7F6F3;
     padding-bottom: 100px;
@@ -159,9 +169,10 @@ li {
 
 button{
     background-color: transparent;
-    border:1px solid black;
-    padding:15px 34px;
-    font-family: FranklinGothic, sans-serif;
+    border:2px solid black;
+    padding:20px 36px;
+    font-family: Demi;
+    font-size: 14px;
     transition-duration: 0.4s;
     float: right;
 }
@@ -244,7 +255,6 @@ img{
 .slidetitle{
     padding-top:160px;
     font-family: 'Franklin Gothic Medium', sans-serif;
-    max-width: 15ch;
     font-size: 40px;
     padding-bottom:30px;
     width:500px;
@@ -277,11 +287,11 @@ img{
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  margin-top: -50px;
+  padding: 35px;
   color: grey;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 50px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -354,7 +364,6 @@ img{
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Quando);
 *, *:after, *:before {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -366,16 +375,15 @@ img{
 .tabs > a:before {
     content: "";
     position: absolute;
-    width: 35%;
+    width: 70%;
     height: 3px;
     bottom: 0;
-    vertical-align: middle;
+    right: 10;
     background: black;
     visibility: hidden;
     border-radius: 5px;
     transform: scaleX(0);
     transition: .25s linear;
-    text-align: center;
   }
   .tabs > a:hover:before,
   .tabs > a:focus:before {
