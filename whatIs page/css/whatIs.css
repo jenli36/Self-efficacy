@@ -36,9 +36,9 @@ li a:hover:not(.active) {
     color:black;
 }
   
-li a.active {
-    color: white;
-    background-color: black;
+li a.activate {
+    color: black;
+    font-style: inherit;
 }
 
 .sections,.subtitle {
@@ -88,7 +88,6 @@ li a.active {
     font-family:FranklinGothic, sans-serif;
 }
 .banner{
-
     color:black;
     padding-left: 70px;
 }
@@ -358,3 +357,33 @@ h3{
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
+@import url(https://fonts.googleapis.com/css?family=Quando);
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border:0 none;position: relative; outline: none;
+}
+
+
+.tabs > a:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    bottom: 0;
+    vertical-align: middle;
+    background: black;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+    text-align: center;
+  }
+  .tabs > a:hover:before,
+  .tabs > a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }

@@ -165,3 +165,23 @@ footer{
 #credit, #ack{
   padding-bottom: 10px;
 }
+
+.tabs > a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: 0;
+  vertical-align: middle;
+  background: black;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+  text-align: center;
+}
+.tabs > a:hover:before,
+.tabs > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
