@@ -440,3 +440,12 @@ img{
     visibility: visible;
     transform: scaleX(1);
 }
+
+@media only screen and (max-width: 415px) {
+    .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  }
+  
