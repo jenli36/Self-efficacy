@@ -1,0 +1,434 @@
+@font-face{
+    font-family:FranklinGothic;
+    src:url("../../Typeface/FranklinGothic");
+}
+@font-face {
+    font-family:Noe;
+    src:url("../../Typeface/NoeDisplay.otf");
+}
+
+@font-face{
+    font-family:Demi;
+    src: url("../../Typeface/bold.TTF");
+  }
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.text_container, .text_container2 {
+    height: 600px;
+
+}
+
+/* navigation */
+#links {
+    padding:20px 70px 20px 0px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.tabs{
+    float: right;
+}
+  
+li a{
+    display:block;
+    font-size:15px;
+    color: #666;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: FranklinGothic, sans-serif;
+}
+  
+li a:hover:not(.active) {
+    color:black;
+}
+  
+li a.activate {
+    color: black;
+    font-size: 16px;
+    font-family: Demi;
+  }
+li {
+    font-size: 15px;
+    font-family: FranklinGothic, sans-serif;
+    line-height: 30px;
+}
+
+/* setting for the intro section */
+.first, .second{
+    width:50%;
+}
+.first {
+background-image: url("../image/background.png");
+}
+.second {
+    max-width: 60ch;
+}
+.intro{
+    padding-top: 100px;
+    display:flex;
+    padding-left: 70px;
+    padding-bottom: 100px;
+}
+.bold, .light{
+    font-family:FranklinGothic, sans-serif;
+    font-size:15px;
+    line-height:22px;
+
+}
+.bold {
+    padding-top:18px;
+    font-weight:bold;
+}
+.light {
+    padding-top:22px;
+}
+
+/* setting for nextseciton */
+.nextsection {
+    padding-left: 70px;
+    padding-top: 100px;
+    padding-bottom:120px;
+}
+.boldtitle {
+    font-family: Noe;
+    font-size: 50px;
+    max-width: 12ch;
+    padding-bottom:30px;
+    padding-top: 15px;
+}
+
+.boldtitle2 {
+    font-family: Noe;
+    font-size: 50px;
+    max-width: 12ch;
+    padding-bottom:16px;
+    padding-top: 15px;
+}
+.boldtitle3 {
+    font-family: Noe;
+    font-size: 50px;
+    max-width: 15ch;
+    padding-bottom:16px;
+    padding-top: 15px;
+}
+.lightpara{
+    font-family: FranklinGothic,sans-serif;
+    font-size:15px;
+    line-height:22px;
+    max-width:66ch;
+}
+
+.banner{
+    color:black;
+    padding-left: 70px;
+}
+
+.sectiontitle {
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.lastlist {
+    padding-top: 18px;
+}
+
+/* setting for the 4 development */
+.row{
+    display:flex;
+    padding-bottom: 150px;
+    height: 700px;
+}
+.image_container2{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    margin-left: 100px;
+
+}
+
+
+.img2{
+    height:100%;
+}
+
+.image_container2.rightimage{
+    padding-left:2px;
+}
+
+.image_container2 {
+    width: 50%;
+}
+.text_container,.text_container2 {
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:150px;
+    background-color: #F7F6F3;
+    height: 500px;
+}
+.text_container{
+    margin-left:80px;
+}
+.text_container2{
+    margin-right:80px;
+}
+.eachtitle {
+    font-family:'Franklin Gothic Medium',sans-serif;
+    padding-top:40px;
+    font-family: Noe;
+    font-size: 25px;
+
+}
+
+.eachtext {
+    padding-top:50px;
+    font-family: FranklinGothic, sans-serif;
+    font-size: 15px;
+    line-height:22px;
+    max-width: 50ch;
+}
+
+.lastsection {
+    margin-top:100px;
+    padding-top: 100px;
+    display:flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 80px;
+    background-color: #F7F6F3;
+    padding-bottom: 100px;
+}
+
+button{
+    background-color: transparent;
+    border:2px solid black;
+    padding:20px 36px;
+    font-family: Demi;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    float: right;
+}
+
+button:hover{
+    background-color:black;
+    color:white;
+}
+
+#letter {
+    padding-top: 100px;
+    padding-right: 80px;
+    padding-bottom:200px;
+
+}
+
+/* footer */
+h3{
+    font-family:'Franklin Gothic Medium', sans-serif;
+    font-size:15px;
+}
+
+/* footer */
+footer{
+    padding-top:25px;
+    padding-bottom:50px;
+    background-color:black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerh3{
+    font-size:12px;
+    line-height:22px;
+  }
+  .leftbot{
+    padding-left:70px;
+    max-width: 45ch;
+  }
+  .rightbot{
+    width:50%;
+    padding-right:70px;
+  }
+  .bottom{
+    font-size:12px;
+    font-family: 'Franklin Gothic', sans-serif;
+    line-height: 20px;
+  }
+  #credit, #ack{
+    padding-bottom: 10px;
+  }
+
+/* slideshow setting */
+.eachslide {
+    display: flex;
+    background-color: #F7F6F3;
+    height:500px;
+}
+.leftText{
+    width:50%;
+    padding-left:120px;
+}
+.rightText{
+    width:50%;
+    padding-right:120px;
+    margin-left:120px;
+}
+
+/* setting for the image in slideshow */
+.image_container{
+    padding-top:60px;
+    padding-right:100px;
+    padding-left:50px;
+    width:50%;
+    height:100%;
+    object-fit: fill;
+}
+
+img{
+    height:120%;
+}
+
+
+/* setting the font-fam,font-size,padding for top&bottom for text on slides */
+
+.slidetitle{
+    padding-top:120px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-size: 40px;
+    padding-bottom:30px;
+    width:500px;
+}
+
+
+.slidetext {
+    font-family: FranklinGothic, sans-serif;
+    font-size: 15px;
+    line-height:22px;
+    max-width: 80ch;
+    width:430px;
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  /* margin-top: 100px;
+  width: 100%; */
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  padding: 35px;
+  color: grey;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color:white;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border:0 none;position: relative; outline: none;
+}
+
+
+.tabs > a:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    bottom: 0;
+    right: 10;
+    background: black;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+  .tabs > a:hover:before,
+  .tabs > a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
