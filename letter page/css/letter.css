@@ -41,7 +41,7 @@ li a:hover:not(.active) {
   
 li a.activate {
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     font-family: Demi;
 }
 li {
@@ -120,6 +120,11 @@ img{
     transform: scaleX(0);
     transition: .25s linear;
 }
+.tabs > a.short:before {
+    width:54%;
+}
+
+.tabs > a.activate:before,
 .tabs > a:hover:before,
 .tabs > a:focus:before {
     visibility:visible;

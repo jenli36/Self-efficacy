@@ -39,7 +39,7 @@ li a{
     color: #666;
     padding: 10px 30px;
     text-decoration: none;
-    font-family: FranklinGothic, sans-serif;
+    font-family: Demi, sans-serif;
 }
   
 li a:hover:not(.active) {
@@ -48,12 +48,10 @@ li a:hover:not(.active) {
   
 li a.activate {
     color: black;
-    font-size: 16px;
     font-family: Demi;
   }
 li {
     font-size: 15px;
-    font-family: FranklinGothic, sans-serif;
     line-height: 30px;
 }
 
@@ -242,6 +240,7 @@ footer{
     justify-content: space-between;
   }
   .footerh3{
+    font-family: FranklinGothic,sans-serif;
     font-size:12px;
     line-height:22px;
   }
@@ -255,11 +254,8 @@ footer{
   }
   .bottom{
     font-size:12px;
-    font-family: 'Franklin Gothic', sans-serif;
+    font-family:FranklinGothic, sans-serif;
     line-height: 20px;
-  }
-  #credit, #ack{
-    padding-bottom: 10px;
   }
 
 /* slideshow setting */
@@ -429,8 +425,14 @@ img{
     transform: scaleX(0);
     transition: .25s linear;
   }
-  .tabs > a:hover:before,
-  .tabs > a:focus:before {
+
+.tabs > a.short:before {
+    width:54%;
+}
+
+.tabs > a.activate:before,
+.tabs > a:hover:before,
+.tabs > a:focus:before {
     visibility: visible;
     transform: scaleX(1);
 }
