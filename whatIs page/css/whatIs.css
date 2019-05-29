@@ -155,6 +155,7 @@ li {
 .img2{
     height:100%;
 }
+
 #secondimage{
     height:110%;
 }
@@ -282,10 +283,16 @@ footer{
     object-fit: fill;
 }
 
+
 img{
     height:130%;
 }
 
+#image4 {
+    margin-top: 90px;
+    height: 60%;
+    margin-left: 60px;
+}
 
 /* setting the font-fam,font-size,padding for top&bottom for text on slides */
 
