@@ -36,7 +36,7 @@ li a{
   color: #666;
   padding: 10px 30px;
   text-decoration: none;
-  font-family: FranklinGothic, sans-serif;
+  font-family: Demi, sans-serif;
 }
 
 li a:hover:not(.active) {
@@ -50,7 +50,6 @@ li a.activate {
 }
 li {
   font-size: 15px;
-  font-family: FranklinGothic, sans-serif;
   line-height: 30px;
 }
 
@@ -92,11 +91,11 @@ p{
 
 .left{
   padding-left:70px;
-  padding-top:300px;
+  padding-top:200px;
 }
 .right{
   width:70%;
-  padding-top:80px;
+  padding-top:20px;
   height:auto;
   object-fit: contain;
 }
