@@ -60,7 +60,9 @@ li {
 .first, .second{
     width:50%;
 }
-
+.quote{
+    text-indent:-8px;
+}
 .second {
     max-width: 60ch;
 }
@@ -74,7 +76,6 @@ li {
     font-family:FranklinGothic, sans-serif;
     font-size:15px;
     line-height:22px;
-
 }
 .bold {
     padding-top:18px;
@@ -198,7 +199,9 @@ li {
     background-color: #F7F6F3;
     padding-bottom: 100px;
 }
-
+.lastlist{
+    font-family: Demi,sans-serif;
+}
 button{
     background-color: transparent;
     border:2px solid black;
@@ -268,13 +271,12 @@ footer{
 .rightText{
     width:50%;
     padding-right:120px;
-    margin-left:120px;
+    padding-left:80px;
 }
 
 /* setting for the image in slideshow */
 .image_container{
-    padding-top:60px;
-    padding-right:100px;
+    padding-top:20px;
     padding-left:50px;
     width:50%;
     height:100%;
@@ -282,7 +284,7 @@ footer{
 }
 
 img{
-    height:120%;
+    height:130%;
 }
 
 
