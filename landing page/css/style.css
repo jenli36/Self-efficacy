@@ -131,7 +131,7 @@ canvas{
   max-width: 8ch;
   animation: fadein 3s;
   line-height: 100%;
-  padding-bottom: 26px;
+  padding-bottom: 15px;
 }
 
 #small {
@@ -139,9 +139,9 @@ canvas{
   font-size:14px;
   color: #ffffff;
   opacity: 0.9;
-  max-width: 50ch;
+  max-width: 60ch;
   letter-spacing: 1px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   animation: fadein 3s;
   line-height: 22px;
 }
@@ -152,7 +152,7 @@ canvas{
   font-size:8px;
   transform: rotate(90deg);
   position: absolute;
-  top: 50vh;
+  top: 45vh;
   right: -60px;
   letter-spacing: 2px;
   animation: fadein 3s;
@@ -171,17 +171,13 @@ canvas{
   transition-duration: 0.4s;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .explore:hover {
-  background-color: white;
-  color: black;
+  background-color: white !important;
+  color: black !important;
 }
 .text-container {
   position: absolute;
-  top: 50vh;
+  top: 45vh;
 }
 
 #content {
@@ -277,6 +273,66 @@ footer{
   font-size: 10pt;
   text-align: center;
   color: white;
+}
+
+/* navigation */
+#links {
+  padding:20px 70px 20px 0px;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.tabs{
+  float: right;
+}
+
+li .eachlink{
+  display:block;
+  font-size:15px;
+  color: lightgray;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: FranklinGothic, sans-serif;
+}
+
+
+li .eachlink:hover:not(.active) {
+  color: white;
+}
+
+li .eachlink.activate {
+  color: white;
+  font-size: 16px;
+  font-family: Demi;
+}
+li {
+  font-size: 15px;
+  font-family: FranklinGothic, sans-serif;
+  line-height: 30px;
+}
+
+
+* {margin:0;padding:0;border:0 none;position: relative; outline: none;
+}
+
+.tabs > a:before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  bottom: 0;
+  right: 10;
+  background: white;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+
+.tabs > a:hover:before,
+.tabs > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 @media(max-width: 375px) {
