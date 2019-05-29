@@ -63,10 +63,6 @@ li {
 .quote{
     text-indent:-8px;
 }
-#firstimage {
-    width: 85%;
-    height:85%;
-}
 .second {
     max-width: 60ch;
 }
@@ -141,29 +137,28 @@ li {
 /* setting for the 4 development */
 .row{
     display:flex;
+    justify-content: space-between;
     padding-bottom: 150px;
     height: 700px;
 }
-.image_container2{
-    width:100%;
+
+.image_container2.rightimage{
+    width:50%;
     height:100%;
+    margin-right:80px;
     object-fit: contain;
-    margin-left: 100px;
-
 }
-
+#firstimage{
+    height:95%;
+}
 
 .img2{
     height:100%;
 }
-
-.image_container2.rightimage{
-    padding-left:2px;
+#secondimage{
+    height:110%;
 }
 
-.image_container2 {
-    width: 50%;
-}
 .text_container,.text_container2 {
     padding-left:40px;
     padding-right:40px;
@@ -182,7 +177,6 @@ li {
     padding-top:40px;
     font-family: Noe;
     font-size: 25px;
-
 }
 
 .eachtext {
@@ -204,7 +198,7 @@ li {
     padding-bottom: 100px;
 }
 .lastlist{
-    font-family: Demi,sans-serif;
+    font-family: Demi, sans-serif;
 }
 button{
     background-color: transparent;
@@ -225,7 +219,6 @@ button:hover{
     padding-top: 100px;
     padding-right: 80px;
     padding-bottom:200px;
-
 }
 
 /* footer */
@@ -242,31 +235,33 @@ footer{
     color:white;
     display: flex;
     justify-content: space-between;
-  }
-  .footerh3{
+}
+.footerh3{
     font-family: FranklinGothic,sans-serif;
     font-size:12px;
     line-height:22px;
-  }
-  .leftbot{
+}
+.leftbot{
     padding-left:70px;
     max-width: 45ch;
-  }
-  .rightbot{
+}
+.rightbot{
     width:50%;
     padding-right:70px;
-  }
-  .bottom{
+}
+.bottom{
     font-size:12px;
     font-family:FranklinGothic, sans-serif;
     line-height: 20px;
-  }
+}
 
 /* slideshow setting */
+.dots{
+    padding-bottom:10px;
+}
 .eachslide {
     display: flex;
-    background-color: #F7F6F3;
-    height:500px;
+    height:480px;
 }
 .leftText{
     width:50%;
@@ -317,10 +312,9 @@ img{
 
 /* Slideshow container */
 .slideshow-container {
-  /* margin-top: 100px;
-  width: 100%; */
   position: relative;
   margin: auto;
+  background-color:#F7F6F3;
 }
 
 
