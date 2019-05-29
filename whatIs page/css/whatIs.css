@@ -17,13 +17,18 @@
     padding:0px;
 }
 
+.text_container, .text_container2 {
+    height: 600px;
+
+}
+
 /* navigation */
 #links {
     padding:20px 70px 20px 0px;
     list-style-type: none;
     overflow: hidden;
 }
-  
+
 .tabs{
     float: right;
 }
@@ -34,7 +39,7 @@ li a{
     color: #666;
     padding: 10px 30px;
     text-decoration: none;
-    font-family: FranklinGothic, sans-serif;
+    font-family: Demi, sans-serif;
 }
   
 li a:hover:not(.active) {
@@ -43,12 +48,10 @@ li a:hover:not(.active) {
   
 li a.activate {
     color: black;
-    font-size: 16px;
     font-family: Demi;
   }
 li {
     font-size: 15px;
-    font-family: FranklinGothic, sans-serif;
     line-height: 30px;
 }
 
@@ -59,13 +62,12 @@ li {
 }
 
 .second {
-    max-width: 70ch;
+    max-width: 60ch;
 }
 .intro{
     padding-top: 100px;
     display:flex;
     padding-left: 70px;
-    padding-right: 100px;
     padding-bottom: 100px;
 }
 .bold, .light{
@@ -86,13 +88,29 @@ li {
 .nextsection {
     padding-left: 70px;
     padding-top: 100px;
-    padding-bottom:100px;
+    padding-bottom:120px;
 }
 .boldtitle {
     font-family: Noe;
     font-size: 50px;
     max-width: 12ch;
     padding-bottom:30px;
+    padding-top: 15px;
+}
+
+.boldtitle2 {
+    font-family: Noe;
+    font-size: 50px;
+    max-width: 12ch;
+    padding-bottom:16px;
+    padding-top: 15px;
+}
+.boldtitle3 {
+    font-family: Noe;
+    font-size: 50px;
+    max-width: 15ch;
+    padding-bottom:16px;
+    padding-top: 15px;
 }
 .lightpara{
     font-family: FranklinGothic,sans-serif;
@@ -100,6 +118,7 @@ li {
     line-height:22px;
     max-width:66ch;
 }
+
 .banner{
     color:black;
     padding-left: 70px;
@@ -110,30 +129,42 @@ li {
     padding-top: 20px;
 }
 
+.lastlist {
+    padding-top: 18px;
+}
+
 /* setting for the 4 development */
 .row{
     display:flex;
-    padding-bottom: 100px;
-    height: 600px;
+    padding-bottom: 150px;
+    height: 700px;
 }
 .image_container2{
     width:100%;
     height:100%;
     object-fit: contain;
+    margin-left: 100px;
 
 }
+
+
 .img2{
     height:100%;
 }
 
 .image_container2.rightimage{
-    padding-left:50px;
+    padding-left:2px;
+}
+
+.image_container2 {
+    width: 50%;
 }
 .text_container,.text_container2 {
     padding-left:40px;
     padding-right:40px;
-    padding-bottom:50px;
+    padding-bottom:150px;
     background-color: #F7F6F3;
+    height: 500px;
 }
 .text_container{
     margin-left:80px;
@@ -146,6 +177,7 @@ li {
     padding-top:40px;
     font-family: Noe;
     font-size: 25px;
+
 }
 
 .eachtext {
@@ -153,7 +185,7 @@ li {
     font-family: FranklinGothic, sans-serif;
     font-size: 15px;
     line-height:22px;
-    max-width: 83ch;
+    max-width: 50ch;
 }
 
 .lastsection {
@@ -195,30 +227,33 @@ h3{
     font-size:15px;
 }
 
+/* footer */
 footer{
     padding-top:25px;
-    padding-bottom:25px;
+    padding-bottom:50px;
     background-color:black;
     color:white;
     display: flex;
     justify-content: space-between;
-}
-.leftbot{
-    padding-left:70px;
-    max-width: 50ch;
-}
-.rightbot{
-    width:55%;
-    padding-right:70px;
-}
-.bottom{
+  }
+  .footerh3{
     font-family: FranklinGothic,sans-serif;
-    font-size:14px;
+    font-size:12px;
     line-height:22px;
-}
-#credit, #ack{
-    padding-bottom: 10px;
-}
+  }
+  .leftbot{
+    padding-left:70px;
+    max-width: 45ch;
+  }
+  .rightbot{
+    width:50%;
+    padding-right:70px;
+  }
+  .bottom{
+    font-size:12px;
+    font-family:FranklinGothic, sans-serif;
+    line-height: 20px;
+  }
 
 /* slideshow setting */
 .eachslide {
@@ -233,16 +268,17 @@ footer{
 .rightText{
     width:50%;
     padding-right:120px;
+    margin-left:120px;
 }
 
 /* setting for the image in slideshow */
 .image_container{
     padding-top:60px;
     padding-right:100px;
-    padding-left:100px;
+    padding-left:50px;
     width:50%;
     height:100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 img{
@@ -253,7 +289,7 @@ img{
 /* setting the font-fam,font-size,padding for top&bottom for text on slides */
 
 .slidetitle{
-    padding-top:160px;
+    padding-top:120px;
     font-family: 'Franklin Gothic Medium', sans-serif;
     font-size: 40px;
     padding-bottom:30px;
@@ -265,9 +301,10 @@ img{
     font-family: FranklinGothic, sans-serif;
     font-size: 15px;
     line-height:22px;
-    max-width: 200ch;
-    width:500px;
+    max-width: 80ch;
+    width:430px;
 }
+
 
 
 * {box-sizing:border-box}
@@ -385,8 +422,14 @@ img{
     transform: scaleX(0);
     transition: .25s linear;
   }
-  .tabs > a:hover:before,
-  .tabs > a:focus:before {
+
+.tabs > a.short:before {
+    width:54%;
+}
+
+.tabs > a.activate:before,
+.tabs > a:hover:before,
+.tabs > a:focus:before {
     visibility: visible;
     transform: scaleX(1);
 }
