@@ -229,30 +229,35 @@ h3{
     font-size:15px;
 }
 
+/* footer */
 footer{
     padding-top:25px;
-    padding-bottom:25px;
+    padding-bottom:50px;
     background-color:black;
     color:white;
     display: flex;
     justify-content: space-between;
-}
-.leftbot{
-    padding-left:70px;
-    max-width: 50ch;
-}
-.rightbot{
-    width:55%;
-    padding-right:70px;
-}
-.bottom{
-    font-family: FranklinGothic,sans-serif;
-    font-size:14px;
+  }
+  .footerh3{
+    font-size:12px;
     line-height:22px;
-}
-#credit, #ack{
+  }
+  .leftbot{
+    padding-left:70px;
+    max-width: 45ch;
+  }
+  .rightbot{
+    width:50%;
+    padding-right:70px;
+  }
+  .bottom{
+    font-size:12px;
+    font-family: 'Franklin Gothic', sans-serif;
+    line-height: 20px;
+  }
+  #credit, #ack{
     padding-bottom: 10px;
-}
+  }
 
 /* slideshow setting */
 .eachslide {
@@ -267,6 +272,7 @@ footer{
 .rightText{
     width:50%;
     padding-right:120px;
+    margin-left:120px;
 }
 
 /* setting for the image in slideshow */
@@ -287,7 +293,7 @@ img{
 /* setting the font-fam,font-size,padding for top&bottom for text on slides */
 
 .slidetitle{
-    padding-top:160px;
+    padding-top:120px;
     font-family: 'Franklin Gothic Medium', sans-serif;
     font-size: 40px;
     padding-bottom:30px;
@@ -300,8 +306,9 @@ img{
     font-size: 15px;
     line-height:22px;
     max-width: 80ch;
-    width:450px;
+    width:430px;
 }
+
 
 
 * {box-sizing:border-box}
