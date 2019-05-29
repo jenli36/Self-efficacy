@@ -62,7 +62,10 @@ li {
 .first, .second{
     width:50%;
 }
-
+#firstimage {
+    width: 85%;
+    height:85%;
+}
 .second {
     max-width: 60ch;
 }
