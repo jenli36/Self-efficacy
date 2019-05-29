@@ -122,6 +122,7 @@ canvas{
 
 .text-container {
   padding-left:120px;
+  padding-bottom:100px;
 }
 
 #big {
@@ -161,7 +162,7 @@ canvas{
 .explore{
   padding:15px 34px;
   background:transparent;
-  font-size:10px;
+  font-size:15px;
   text-align:center;
   font-style: unset;
   color: #ffffff;
@@ -169,6 +170,7 @@ canvas{
   font-family: Demi;
   animation: fadein 3s;
   transition-duration: 0.4s;
+  z-index:1;
 }
 
 .explore:hover {
@@ -180,100 +182,7 @@ canvas{
   top: 45vh;
 }
 
-#content {
-  background-color: #fff;
-}
 
-.masthead{
-  padding:200px 0px 100px 0px;
-  background-color:black;
-}
-
-.huge_title{
-  font-family: GT-Super-Display-Super;
-  color:white;
-  font-size:70px;
-}
-
-.explore{
-  padding:14pt 34px;
-  font-weight:bold;
-  background:transparent;
-  font-size:14px;
-  text-align:center;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-}
-.banner{
-  background-color: black;
-  margin-left: 125px;
-}
-
-/* for the forward section */
-.forward{
-  padding-top:150px;
-  padding-bottom:100px;
-  background-color:white;
-  color:black;    
-  display:flex;
-}
-
-
-.left{
-  font-family:GT-Super-Display-Super;
-  writing-mode: vertical-rl;
-  font-size:120px;
-  color:black;
-  margin-left:0px;
-  margin-left:90px;
-}
-
-.right{
-  width:650px;
-  padding-left: 300px;
-  padding-right:90px;
-
-}
-
-.para,.boldpara{
-  margin-top:22pt;
-  line-height: 25px;
-  font-size: 18px;
-}
-.firstpara{
-  margin-top:0px;
-  font-size: 18px;
-  line-height:25px;
-}
-/* setting the fonts for the paragraph */
-.para,.names{
-  font-family:mid-heavyFont;
-}
-
-.boldpara, .firstpara{
-  font-family: demiFont;
-}
-.names{
-  font-style:italic;
-  padding-bottom: 10px;
-}
-
-.row{
-  display:flex;
-  padding-bottom: 30px;
-}
-
-/* for the footer */
-footer{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: black;
-}
-.footerText{
-  font-size: 10pt;
-  text-align: center;
-  color: white;
-}
 
 /* navigation */
 #links {
@@ -292,7 +201,7 @@ li .eachlink{
   color: lightgray;
   padding: 10px 30px;
   text-decoration: none;
-  font-family: FranklinGothic, sans-serif;
+  font-family: Demi, sans-serif;
 }
 
 
@@ -307,7 +216,6 @@ li .eachlink.activate {
 }
 li {
   font-size: 15px;
-  font-family: FranklinGothic, sans-serif;
   line-height: 30px;
 }
 
@@ -402,7 +310,6 @@ li {
   }
 }
 
-
 @keyframes fadein {
   from {
       opacity:0;
@@ -429,21 +336,5 @@ li {
 
   #message {
     top:40vh;
-  }
-
-  .forward_title {
-    font-size: 50%
-  }
-
-  .left {
-    margin-left: 20px;
-  }
-
-  .right {
-    padding-left: 50px;
-  }
-
-  .forward {
-    padding-top: 100px;
   }
 }

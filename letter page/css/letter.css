@@ -58,7 +58,8 @@ p{
     font-family: FranklinGothic, sans-serif;
     font-size:15px;
     line-height:22px;
-    padding-top:22px;
+    padding-top:11px;
+    padding-bottom:11px;
 }
 .names {
     font-style:italic;
@@ -70,7 +71,7 @@ p{
     height:auto;
 }
 .quote{
-    text-indent: -10px;
+    text-indent: -17px;
 }
 .left{
     width:52%;
@@ -82,7 +83,7 @@ p{
 
 .title{
     padding-left:70px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 .image_container{
