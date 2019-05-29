@@ -57,12 +57,13 @@ li {
     line-height: 30px;
 }
 
-
 /* setting for the intro section */
 .first, .second{
     width:50%;
 }
-
+.first {
+background-image: url("../image/background.png");
+}
 .second {
     max-width: 60ch;
 }
