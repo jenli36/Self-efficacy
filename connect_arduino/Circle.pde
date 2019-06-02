@@ -3,13 +3,9 @@
 public class Circle{
   PVector location,velocity,acceleration;
   float G,mass,size;
-  String building;
   
-  Circle(String building){
-    this.building = building;
-    if (building.equals("Allen")) { // prints to the right half
-      location = new PVector(int(random(100, width-100)), int(random(400, height)));    
-    }
+  Circle(){
+    location = new PVector(int(random(100, width - 100)), int(random(400, height)));    
     velocity = new PVector(0,0);
     acceleration = new PVector(0,0);
     G = 0.6;
@@ -34,15 +30,7 @@ public class Circle{
     if (size > 8) {
       size--;
       noStroke();
-      //if (location.x < width / 2) {
-      //  fill(colorList[0]);
-      //} else {
-      //  fill(colorList[1]);
-      //}
     }
-    //} else {
-    //    fill(255);
-    //}
     fill(255);
     ellipse(location.x, location.y, size, size);
   }
