@@ -294,7 +294,7 @@ h3{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .navigation {
     display: none;
@@ -318,7 +318,7 @@ h3{
   .rightcopy {
     display: block;
     float:left;
-    width: 350px;
+    width: 50vh;
     height: auto;
     margin-left: 10px;
     margin-bottom: 20px;
@@ -331,7 +331,7 @@ h3{
 
   .left {
     padding-left: 40px;
-    padding-top: 100px;
+    padding-top: 60px;
   }
 
   .smalltextcopy {
@@ -414,6 +414,7 @@ h3{
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #ccc;
+    color: black;
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -439,7 +440,7 @@ h3{
   }
 
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\2795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
