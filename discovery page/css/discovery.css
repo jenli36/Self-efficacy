@@ -288,6 +288,11 @@ h3{
   float: left;
 }
 
+#launch:hover{
+  background-color:black;
+  color:white;
+}
+
 
 @media (max-width: 600px) {
 
@@ -342,6 +347,11 @@ h3{
     float: left;
     padding: 10px 30px;
     margin-bottom: 50px;
+  }
+
+  #launch:hover{
+    background-color:black;
+    color:white;
   }
 
   .resources_container {
@@ -504,6 +514,11 @@ h3{
     display: block;
   }
 
+  .topnav a.activate {
+    background-color: black;
+    color: white;
+
+  }
 
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
