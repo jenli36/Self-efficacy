@@ -16,9 +16,9 @@ void setup(void) {
 void loop(void) {
   fsrReading = analogRead(fsrPin);  
   // it only prints something if the fsrReading is above 10
-  if (fsrReading > 10) {
+  if (fsrReading > 5) {
     Serial.println("1");
-    delay(2500);
+    delay(2600);
   }
   delay(400);
 } 
