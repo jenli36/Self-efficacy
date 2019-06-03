@@ -1,35 +1,44 @@
 import processing.serial.*;
 import processing.sound.*;
 
-Serial myPort;
-String val;
+// random message to pick from
+String[] messages = {"THANK YOU FOR SHARING ^_^", "YOUR STEP HAS AN IMPACT ^_^", 
+"YOU ARE NOT ALONE,", " PEOPLE RESONATE WITH YOU"};
+int index;  // random index of the messages
+
+Serial myPort;  // arduino serial port
+String val;  // value received from arduino
+
+// current list of dots added
 ArrayList<Circle> circles = new ArrayList<Circle>();
-SoundFile music;
-PFont prompt;
-PFont current;
-int count = 0; // # of votes
+SoundFile music;  // the triggered sound file
+PFont prompt; // Displayed text
+int count = 0; // current number of votes by people
+// whether to display the message
 boolean message;
-boolean triggered;
+// detects if the sensor is triggered
+boolean triggered; 
+// whether people can interact with the sensor
+boolean disable;
 int start1;
 int start2;
-final int DURATION = 3000;
-final int WAITING = 2500;
+final int DURATION = 2500;
+final int WAITING = 1000;
 
 void setup() {
-  // screensize
   fullScreen();
   smooth();
   // portName that Arduino IDE is connecting to
- // String portName = Serial.list()[1];
+  String portName = Serial.list()[1];
   // sets up the serial
- // myPort = new Serial(this, portName, 9600);
+  myPort = new Serial(this, portName, 9600);
   // sets up the fonts
-  prompt = createFont("AvenirNext-Bold", 45);
-  current = createFont("AvenirNext-Bold", 45);
+  prompt = createFont("AvenirNext-Bold", 40);
   music = new SoundFile(this, "sound.mp3");
   music.amp(0.5); // the volumn  value is [0.0, 1.0] 
   message = false;
   triggered = false;
+  disable = false;
 }
 
 void draw() {
@@ -41,7 +50,7 @@ void draw() {
   textAlign(CENTER, BOTTOM);
   pushMatrix();
   translate(x,y);
-  textFont(prompt, 40);
+  textFont(prompt,40);
   // normal text to display
   if (triggered && millis() - start1 > WAITING) {
     message = true;
@@ -49,19 +58,25 @@ void draw() {
     triggered = false;
   }
   if (!message) {
-    text("I HAVE ONCE", 0, 10);
-    text("DOUBTED", 0, 60);
+    text("I HAVE ONCE", 0, 0);
+    text("DOUBTED", 0, 70);
     text("MY  EDUCATIONAL", 0, 150);
     text("SKILL  SET", 0, 230);
     // Displays the current number of people who said yes
-    textFont(current, 40);
-    text(count + " PEOPLE AGREED", 0, 320);
+    text(count + " PEOPLE AGREED TODAY", 0, 320);
   } else {
-    text("TALK TO", 0, 10);
-    text("OUR TEAM MEMBERS", 0, 60);
-    text("TO LEARN MORE →", 0, 150);
+    if (index == 3) {
+      text((count - 1) + messages[index], 0, 0);
+    } else {
+      text(messages[index], 0, 0);
+    }
+    text("TALK TO", 0, 70);
+    text("OUR TEAM MEMBERS", 0, 150);
+    text("TO LEARN MORE →", 0, 230);
+    disable = true;
     if (millis() - start2 > DURATION) {
       message = false;
+      disable = false;
     }
   }    
   popMatrix();
@@ -89,12 +104,20 @@ void draw() {
 }
 
 void mousePressed(){
+  if (!disable) {
     music.play();
     Circle c = new Circle();
     circles.add(c);
     count++;
     start1 = millis();
     triggered = true;
+    // generates a random index
+    if (count == 1) {
+      index = int(random(0,3));
+    } else {
+      index = int(random(0,4));
+    }
+  }
 }
 
 void keyPressed() {
@@ -105,7 +128,7 @@ void keyPressed() {
 }
 
 void serialEvent(Serial myPort) {
-   if (myPort.available() > 0) {
+   if (myPort.available() > 0 && !disable) {
     val = myPort.readStringUntil('\n');
     if (val != null) {
       music.play();
@@ -114,6 +137,12 @@ void serialEvent(Serial myPort) {
       count++;
       start1 = millis();
       triggered = true;
+      // generates a random index
+      if (count == 1) {
+        index = int(random(0,3));
+      } else {
+        index = int(random(0,4));
+      }
     }
   }
 }
