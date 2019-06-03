@@ -22,8 +22,8 @@ boolean triggered;
 boolean disable;
 int start1;
 int start2;
-final int DURATION = 2500;
-final int WAITING = 1000;
+final int DURATION = 4000;
+final int WAITING = 1500;
 
 void setup() {
   fullScreen();
@@ -138,7 +138,7 @@ void serialEvent(Serial myPort) {
       start1 = millis();
       triggered = true;
       // generates a random index
-      if (count == 1) {
+      if (count < 2) {
         index = int(random(0,3));
       } else {
         index = int(random(0,4));
