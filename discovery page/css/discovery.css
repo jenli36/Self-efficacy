@@ -399,7 +399,7 @@ h3{
 
   .accordion {
     background-color: #eee;
-    color: #444;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -426,6 +426,7 @@ h3{
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
+    color: black;
   }
 
   .paneltext {
@@ -446,10 +447,15 @@ h3{
     float: right;
     margin-left: 5px;
   }
+
+  .thiscolor:active {
+    color: black;
+  }
   
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
     float: right;
+    color: black;
   }
 
   .row {
@@ -458,6 +464,7 @@ h3{
   
   .panel {
     background-color: #f7f6f3;
+    color: black;
   }
 
   .leftbot {
@@ -482,14 +489,15 @@ h3{
     display: block;
     color:   black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 15px;
     text-decoration: none;
     font-size: 15px;
     font-family: Demi;
+    background-color: #f7f6f3;
   }
   
   /* Change the color of links on hover */
-  .topnav a:hover {
+ #myTopnav a:hover {
     background-color: #f7f6f3;
     color: black;
   }
@@ -497,7 +505,7 @@ h3{
   /* Add an active class to highlight the current page */
   .active {
     background-color:  #f7f6f3;
-    color: white;
+    color: black;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -512,7 +520,10 @@ h3{
   .topnav a.icon {
     float: right;
     display: block;
+    font-size: 25px;
+    padding: 20px 15px;
   }
+
 
   .topnav a.activate {
     background-color: black;
@@ -530,5 +541,13 @@ h3{
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .smalltextcopy {
+    font-family:'Franklin Gothic Medium', sans-serif;
+  }
+
+  .small {
+    font-family: 'Franklin Gothic Medium', sans-serif;
   }
 }
