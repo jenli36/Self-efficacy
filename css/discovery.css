@@ -45,7 +45,7 @@ li a:hover:not(.active) {
 
 li a.activate {
   color: black;
-  font-size: 16px;
+  font-size: 15px;
   font-family: Demi;
 }
 li {
@@ -56,6 +56,7 @@ li {
 /* banner section */
 .banner{
   display:flex;
+  flex-direction: row;
 }
 
 h1{
@@ -130,6 +131,7 @@ img{
   padding-right:70px;
 }
 
+
 .row{
   padding-bottom:100px;
   display:flex;
@@ -163,6 +165,24 @@ button:hover{
   float:right;
 }
 
+.test{
+  padding:15px 34px;
+  background:transparent;
+  font-size:15px;
+  text-align:center;
+  font-style: unset;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: Demi;
+  animation: fadein 3s;
+  transition-duration: 0.4s;
+  z-index:1;
+}
+
+.test:hover {
+  background-color: white !important;
+  color: black !important;
+}
 /* footer */
 footer{
   padding-top:25px;
@@ -211,6 +231,10 @@ h3{
   transform: scaleX(0);
   transition: .25s linear;
 }
+.tabs > a.short:before {
+  width:54%;
+}
+.tabs > a.activate:before,
 .tabs > a:hover:before,
 .tabs > a:focus:before {
   visibility: visible;
@@ -242,4 +266,288 @@ h3{
   .each > a:focus:before {
     visibility: visible;
     transform: scaleX(1);
+}
+
+.rightcopy {
+  display: none;
+}
+
+.smalltextcopy {
+  display: none;
+}
+
+.mobilelist {
+  display: none;
+}
+
+.topnav {
+  display: none;
+}
+
+#launch {
+  float: left;
+}
+
+#launch:hover{
+  background-color:black;
+  color:white;
+}
+
+
+@media (max-width: 768px) {
+
+  .navigation {
+    display: none;
+  }
+  #big {
+    font-size: 35px;
+    padding-left: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+  }
+
+  .banner {
+    display: inline;
+  }
+
+  .right {
+  display: none;
+  }
+
+  .rightcopy {
+    display: block;
+    float:left;
+    width: 50vh;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+  }
+
+  .smalltext {
+    display: none;
+  }
+
+  .left {
+    padding-left: 40px;
+    padding-top: 60px;
+  }
+
+  .smalltextcopy {
+    display: block;
+    padding-top:50px;
+    padding-bottom:30px;
+    max-width: 42ch;
+    font-size: 15px;
+ 
+  }
+
+  #launch {
+    float: left;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+  }
+
+  #launch:hover{
+    background-color:black;
+    color:white;
+  }
+
+  .resources_container {
+    background-color:  #f7f6f3;
+  }
+
+  #resourcetitle {
+    padding-top: 60px;
+    font-size: 35px;
+    max-width: 8ch;
+  }
+
+  .title {
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+
+  .small {
+    max-width: 44ch;
+    font-size: 14px;
+    padding-bottom: 80px;
+  }
+
+  #whatis {
+    display: none;
+  }
+
+  .rightbot {
+    display: none;
+  }
+
+  #footertitle {
+    font-size: 14px;
+  }
+
+  .container {
+    display: none;
+  }
+
+  /*mobilelist*/
+  .mobilelist {
+    display: block !important;
+    padding-bottom: 120px;
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: Demi;
+    font-size: 20px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    color: black;
+  }
+
+  .paneltext {
+    margin-top: 40px;
+    max-width: 40ch;
+  }
+
+  .panelbutton {
+    margin-top: 30px;
+    float: left;
+    margin-bottom: 40px;
+  }
+
+  .accordion:after {
+    content: '\2795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .thiscolor:active {
+    color: black;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    float: right;
+    color: black;
+  }
+
+  .row {
+    display: none;
+  }
+  
+  .panel {
+    background-color: #f7f6f3;
+    color: black;
+  }
+
+  .leftbot {
+    padding-left: 35px;
+  }
+
+  .bottom {
+    line-height: 18px;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  .topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color:   black;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Demi;
+    background-color: #f7f6f3;
+  }
+  
+  /* Change the color of links on hover */
+ #myTopnav a:hover {
+    background-color: #f7f6f3;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color:  #f7f6f3;
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 25px;
+    padding: 20px 15px;
+  }
+
+
+  .topnav a.activate {
+    background-color: black;
+    color: white;
+
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .smalltextcopy {
+    font-family:'Franklin Gothic Medium', sans-serif;
+  }
+
+  .small {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+  }
 }

@@ -6,15 +6,35 @@
   <meta name="description" content="">
   <meta name="author" content="TeamOne" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 <body>
+      <div class="topnav" id="myTopnav">
+        <a href="../discovery page/discovery.html">Resources</a>
+        <a href="../whatIs page/whatIs.html">What is Self-efficacy</a>
+        <a href="../letter page/letter.html">Letter from Creators</a>
 
+        <a class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" style="color:white"></i>
+        </a>
+      </div>
+
+    <script>
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+    }
+    </script>
     <div class="navigation">
         <ul id="links">
             <li class="tabs"><a class="eachlink" href="../letter page/letter.html">Letter from Creators</a></li>
-            <li class="tabs"><a class="eachlink" href="../discovery page/discovery.html">Resources</a></li>
             <li class="tabs"><a class="eachlink" href="../whatIs page/whatIs.html">What is Self-efficacy</a></li>
+            <li class="tabs"><a class="eachlink short" href="../discovery page/discovery.html">Resources</a></li>
         </ul>
     </div>
 
@@ -23,7 +43,7 @@
 <div id="particles-js">
   <div class="text-container">
     <h1 id="big">You Are Not Alone</h1>
-    <p id="small">Join the conversation about self-efﬁcacy today by<br>launching the activity below.</p>
+    <p id="small">Join the conversation about self-efﬁcacy today by launching the activity below.</p>
     <button class="explore" onclick="location.href='../discovery page/discovery.html'">LAUNCH NOW</button>
   </div>
   <p id="message">TEAM ONE CREATED WITH LOVE</p>
