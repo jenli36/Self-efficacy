@@ -1,15 +1,15 @@
 @font-face{
   font-family:Noe;
-  src: url("../../Typeface/NoeDisplay.otf");
+  src: url("../Typeface/NoeDisplay.otf");
 }
 @font-face{
   font-family:FranklinGothic;
-  src: url("../../Typeface/FranklinGothic");
+  src: url("../Typeface/FranklinGothic");
 }
 
 @font-face{
   font-family:Demi;
-  src: url("../../Typeface/bold.TTF");
+  src: url("../Typeface/bold.TTF");
 }
 
 /* setting the font */

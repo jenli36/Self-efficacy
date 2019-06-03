@@ -78,12 +78,12 @@
    /* ---- particles.js container ---- */
    @font-face{
      font-family:GT-Super-Display-Super;
-     src: url("../font/GT-Super-Display-Super.woff");
+     src: url("font/GT-Super-Display-Super.woff");
    }
    
    @font-face{
      font-family:Demi;
-     src: url("../../Typeface/bold.TTF");
+     src: url("Typeface/bold.TTF");
    }
    
    #particles-js{
