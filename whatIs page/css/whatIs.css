@@ -441,11 +441,191 @@ img{
     transform: scaleX(1);
 }
 
-@media only screen and (max-width: 415px) {
-    .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
+.topnav {
+    display: none;
+}
+
+#img2copy {
+    display: none;
+}
+
+#img4copy {
+  display: none;
+}
+
+
+  @media (max-width: 768px) {
+      .intro {
+          display: block;
+          padding-left: 0px;
+
+      }
+
+      .navigation {
+        display: none;
+      }
+
+      .topnav {
+        display: block;
+      }
+    
+      .topnav {
+        overflow: hidden;
+      }
+      
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        display: block;
+        color:  black;
+        text-align: center;
+        padding: 20px 15px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Demi;
+        background-color: #f7f6f3;
+      }
+      
+      /* Change the color of links on hover */
+     #myTopnav a:hover {
+        background-color: #f7f6f3;
+        color: black;
+      }
+      
+      /* Add an active class to highlight the current page */
+      .active {
+        background-color:  #f7f6f3;
+        color: black;
+      }
+      
+      /* Hide the link that should open and close the topnav on small screens */
+      .topnav .icon {
+        display: none;
+      }
+    
+      .topnav a {
+        display: none;
+      }
+    
+      .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 25px;
+        padding: 20px 15px;
+      }
+    
+    
+      .topnav a.activate {
+        background-color: black;
+        color: white;
+    
+      }
+    
+      .topnav.responsive {position: relative;}
+      .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .boldtitle {
+        font-size: 35px;
+        max-width: 12ch;
+      }
+
+      .first, .second {
+          width:100%;
+      }
+    
+      .intro {
+          padding-left: 25px;
+      }
+
+      .second {
+        font-size: 10px;
+        max-width: 70ch;
+      }
+
+      .slidetitle {
+          font-size: 25px;
+          max-width: 20ch;
+          padding-top: 50px;
+      }
+
+      .leftText {
+          width: 100%;
+          padding-left: 25px;
+      }
+
+      .rightText {
+        width: 100%;
+        padding-left: 25px; 
+        padding-right: 0px;
+      }
+
+      .slidetext {
+          width: 90%;
+          max-width: 1000ch;
+      }
+
+      .slideshow-container {
+          height: 600px;
+          width: 100%;
+      }
+
+      .eachslide {
+          display: block;
+      }
+
+      .image_container {
+          width: 100%;
+          height: 65%;
+          padding-top: 0px;
+          padding-left: 0px;
+      }
+
+      .prev, .next {
+          display: none;
+      }
+
+      .dots {
+          padding-top: 80px;
+      }
+
+      .dot {
+          width: 12px;
+          height:12px;
+      }
+
+      #img1 {
+        padding-left: 50px;
+    }
+
+    #img3 {
+        padding-left: 50px;
+    }
+
+      #img2 {
+          display: none;
+      }
+
+      #img4 {
+        display: none;
+    }
+
+    #img2copy {
+        display: block;
+        margin-right: 100px;
+    }
+    
+    #img4copy {
+      display: block;
+      height: 60%
+    }
+
   }
-  }
-  

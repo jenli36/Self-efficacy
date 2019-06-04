@@ -12,6 +12,28 @@
 </head>
 
 <body id="page-top">
+
+        <div class="topnav" id="myTopnav">
+                <a class="activate short" href="#resources">Resources</a>
+                <a href="../whatIs page/whatIs.html">What is Self-efficacy</a>
+                <a href="../letter page/letter.html">Letter from Creators</a>
+    
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+    
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+        </script>
+
     <div class="navigation">
         <ul id="links">
             <li class="tabs"><a href="../letter page/letter.html">Letter from Creators</a></li>
@@ -19,6 +41,8 @@
             <li class="tabs"><a class = "short" href="../discovery page/discovery.html">Resources</a></li>
         </ul>
     </div>
+
+    
 
     <section class="intro">
         <div class="first">
@@ -47,7 +71,7 @@
                 <div class="mySlides fade">
                     <div class="eachslide">
                         <div class ="leftText">
-                            <h3 class="slidetitle">SELF-EFFICACY<br>VS RESILIENCE</h3>
+                            <h3 class="slidetitle">SELF-EFFICACY VS RESILIENCE</h3>
                             <p class="slidetext">While experiences of success certainly make up a large portion of self-efficacy 
                                 development, there is also room for failure. Those with a high level of self-efficacy are not only 
                                 more likely to succeed, they are also more likely to bounce back and recover from failure. 
@@ -55,14 +79,14 @@
                             </p>            
                         </div>
                         <div class ="image_container">
-                            <img  src="../illustrations/New/head_1-01.png">  
+                            <img  id="img1" src="../illustrations/New/head_1-01.png">  
                         </div>
                     </div>
                 </div>
         
                 <div class="mySlides fade">
                     <div class="eachslide">
-                        <div class ="image_container">
+                        <div class ="image_container" id="img2">
                             <img src="../illustrations/New/head_3-01.png">  
                         </div>
                         <div class ="rightText">
@@ -72,6 +96,9 @@
                                 refers specifically to your belief in your in your competence and capabilities (Bandura, 1997, p. 382).
                             </p>
                         </div>
+                        <div class ="image_container" id="img2copy">
+                                <img src="../illustrations/New/head_3-01.png">  
+                            </div>
                     </div>
                 </div>
               
@@ -85,14 +112,14 @@
                                 </p>
                             </div>
                             <div class ="image_container">
-                                <img src="../illustrations/New/head_2-01.png">  
+                                <img id="img3" src="../illustrations/New/head_2-01.png">  
                             </div>
                         </div>
                     </div>
         
                 <div class="mySlides fade">
                     <div class="eachslide">
-                        <div class ="image_container">
+                        <div class ="image_container" id="img4">
                             <img id="image4" src="../illustrations/head4-01_fixed-01.png"> 
                         </div>
                         <div class ="rightText">
@@ -103,6 +130,10 @@
                                 have high motivation and vice versa, but it is not a direct correlation. 
                             </p>
                         </div>
+                        <div class="eachslide">
+                                <div class ="image_container" id="img4copy">
+                                    <img id="image4" src="../illustrations/head4-01_fixed-01.png"> 
+                                </div>
                     </div>
                 </div>
                 
