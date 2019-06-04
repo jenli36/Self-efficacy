@@ -18,14 +18,11 @@
 }
 
 .text_container, .text_container2 {
-    height: auto;
+    height: 600px;
 
 }
 
 /* navigation */
-.topnav{
-    display: none;
-}
 #links {
     padding:20px 70px 20px 0px;
     list-style-type: none;
@@ -42,7 +39,7 @@ li a{
     color: #666;
     padding: 10px 30px;
     text-decoration: none;
-    font-family: Demi, sans-serif;
+    font-family: FranklinGothic, sans-serif;
 }
   
 li a:hover:not(.active) {
@@ -51,10 +48,12 @@ li a:hover:not(.active) {
   
 li a.activate {
     color: black;
+    font-size: 16px;
     font-family: Demi;
   }
 li {
     font-size: 15px;
+    font-family: FranklinGothic, sans-serif;
     line-height: 30px;
 }
 
@@ -66,20 +65,19 @@ li {
 background-image: url("../image/background.png");
 }
 .second {
-    padding-left:30px;
-    max-width: 80ch;
+    max-width: 60ch;
 }
 .intro{
     padding-top: 100px;
     display:flex;
-    padding-left: 7%;
-    padding-right:7%;
+    padding-left: 70px;
     padding-bottom: 100px;
 }
 .bold, .light{
     font-family:FranklinGothic, sans-serif;
     font-size:15px;
     line-height:22px;
+
 }
 .bold {
     padding-top:18px;
@@ -91,11 +89,10 @@ background-image: url("../image/background.png");
 
 /* setting for nextseciton */
 .nextsection {
-    padding-left: 7%;
+    padding-left: 70px;
     padding-top: 100px;
     padding-bottom:120px;
 }
-
 .boldtitle {
     font-family: Noe;
     font-size: 50px;
@@ -125,6 +122,10 @@ background-image: url("../image/background.png");
     max-width:66ch;
 }
 
+.banner{
+    color:black;
+    padding-left: 70px;
+}
 
 .sectiontitle {
     font-size: 25px;
@@ -138,38 +139,48 @@ background-image: url("../image/background.png");
 /* setting for the 4 development */
 .row{
     display:flex;
-    justify-content: space-around;
     padding-bottom: 150px;
-    height: 600px;
+    height: 700px;
+}
+.image_container2{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    margin-left: 100px;
+
+}
+
+
+.img2{
+    height:100%;
 }
 
 .image_container2.rightimage{
-    width:100%;
-    height:100%;
-    margin-right:7%;
-    object-fit: contain;
+    padding-left:2px;
 }
 
-
+.image_container2 {
+    width: 50%;
+}
 .text_container,.text_container2 {
-    width:50%;
-    padding-left:4%;
-    padding-right:4%;
-    padding-bottom:4%;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom:150px;
     background-color: #F7F6F3;
-    height: auto;
+    height: 500px;
 }
 .text_container{
-    margin-left:7%;
+    margin-left:80px;
 }
 .text_container2{
-    margin-right:7%;
+    margin-right:80px;
 }
 .eachtitle {
     font-family:'Franklin Gothic Medium',sans-serif;
     padding-top:40px;
     font-family: Noe;
     font-size: 25px;
+
 }
 
 .eachtext {
@@ -177,7 +188,7 @@ background-image: url("../image/background.png");
     font-family: FranklinGothic, sans-serif;
     font-size: 15px;
     line-height:22px;
-    max-width: 100ch;
+    max-width: 50ch;
 }
 
 .lastsection {
@@ -185,15 +196,12 @@ background-image: url("../image/background.png");
     padding-top: 100px;
     display:flex;
     justify-content: space-between;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 70px;
+    padding-right: 80px;
     background-color: #F7F6F3;
     padding-bottom: 100px;
 }
-.lastlist{
-    padding-left:30px;
-    font-family: Demi, sans-serif;
-}
+
 button{
     background-color: transparent;
     border:2px solid black;
@@ -211,8 +219,9 @@ button:hover{
 
 #letter {
     padding-top: 100px;
-    padding-right: 7%;
+    padding-right: 80px;
     padding-bottom:200px;
+
 }
 
 /* footer */
@@ -229,69 +238,58 @@ footer{
     color:white;
     display: flex;
     justify-content: space-between;
-}
-.footerh3{
-    font-family: FranklinGothic,sans-serif;
+  }
+  .footerh3{
     font-size:12px;
     line-height:22px;
-}
-.leftbot{
-    padding-left:7%;
+  }
+  .leftbot{
+    padding-left:70px;
     max-width: 45ch;
-}
-.rightbot{
+  }
+  .rightbot{
     width:50%;
-    padding-right:7%;
-}
-.bottom{
+    padding-right:70px;
+  }
+  .bottom{
     font-size:12px;
-    font-family:FranklinGothic, sans-serif;
+    font-family: 'Franklin Gothic', sans-serif;
     line-height: 20px;
-}
+  }
+  #credit, #ack{
+    padding-bottom: 10px;
+  }
 
 /* slideshow setting */
-.dots{
-    padding-bottom:10px;
-}
 .eachslide {
     display: flex;
-    justify-content: space-between;
-    height:480px;
+    background-color: #F7F6F3;
+    height:500px;
 }
 .leftText{
     width:50%;
-    padding-left:10%;
+    padding-left:120px;
 }
 .rightText{
     width:50%;
-    padding-right:10%;
-    padding-left:5%;
+    padding-right:120px;
+    margin-left:120px;
 }
 
 /* setting for the image in slideshow */
-.image_container_left, .image_container_right{
-    padding-top:20px;
+.image_container{
+    padding-top:60px;
+    padding-right:100px;
+    padding-left:50px;
     width:50%;
     height:100%;
-    object-fit: contain;
-}
-
-.image_container_left{
-    margin-left:7%;
-}
-.image_container_right{
-    margin-right:7%;
+    object-fit: fill;
 }
 
 img{
-    height:130%;
+    height:120%;
 }
 
-#image4 {
-    margin-top: 90px;
-    height: 60%;
-    margin-left: 60px;
-}
 
 /* setting the font-fam,font-size,padding for top&bottom for text on slides */
 
@@ -300,7 +298,7 @@ img{
     font-family: 'Franklin Gothic Medium', sans-serif;
     font-size: 40px;
     padding-bottom:30px;
-    width:100%;
+    width:500px;
 }
 
 
@@ -309,7 +307,7 @@ img{
     font-size: 15px;
     line-height:22px;
     max-width: 80ch;
-    width:100%;
+    width:430px;
 }
 
 
@@ -318,10 +316,10 @@ img{
 
 /* Slideshow container */
 .slideshow-container {
+  /* margin-top: 100px;
+  width: 100%; */
   position: relative;
   margin: auto;
-  background-color:#F7F6F3;
-  height: 600px;
 }
 
 
@@ -429,29 +427,15 @@ img{
     transform: scaleX(0);
     transition: .25s linear;
   }
-
-.tabs > a.short:before {
-    width:54%;
-}
-
-.tabs > a.activate:before,
-.tabs > a:hover:before,
-.tabs > a:focus:before {
+  .tabs > a:hover:before,
+  .tabs > a:focus:before {
     visibility: visible;
     transform: scaleX(1);
 }
 
-.topnav {
-    display: none;
-}
-
-#img2copy {
-    display: none;
-}
-
-#img4copy {
-  display: none;
-}
+    .topnav {
+        display: none;
+    }
 
 
   @media (max-width: 768px) {
@@ -477,7 +461,7 @@ img{
       .topnav a {
         float: left;
         display: block;
-        color:  black;
+        color:   black;
         text-align: center;
         padding: 20px 15px;
         text-decoration: none;
