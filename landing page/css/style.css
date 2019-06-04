@@ -2,299 +2,299 @@
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
 
-   html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-   body{line-height:1}
-   article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-   nav ul{list-style:none}
-   blockquote,q{quotes:none}
-   blockquote:before,blockquote:after,q:before,q:after{content:none}
-   a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-   mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-   del{text-decoration:line-through}
-   abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-   table{border-collapse:collapse;border-spacing:0}
-   hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-   input,select{vertical-align:middle}
-   li{list-style:none}
-   
-   
-   /* =============================================================================
-      My CSS
-      ========================================================================== */
-   
-   /* ---- base ---- */
-   
-   html,body{ 
-     width:100%;
-     height:100%;
-     background:#111;
-   }
-   
-   canvas{
-     display:block;
-     width:100%;
-   }
-   
-   
-   /* ---- stats.js ---- */
-   
-   .count-particles{
-     background: #000022;
-     position: absolute;
-     top: 48px;
-     left: 0;
-     width: 80px;
-     color: #13E8E9;
-     font-size: .8em;
-     text-align: left;
-     text-indent: 4px;
-     line-height: 14px;
-     padding-bottom: 2px;
-     font-family: Helvetica, Arial, sans-serif;
-     font-weight: bold;
-   }
-   
-   .js-count-particles{
-     font-size: 1.1em;
-   }
-   
-   #stats,
-   .count-particles{
-     -webkit-user-select: none;
-     margin-top: 5px;
-     margin-left: 5px;
-   }
-   
-   #stats{
-     border-radius: 3px 3px 0 0;
-     overflow: hidden;
-   }
-   
-   .count-particles{
-     border-radius: 0 0 3px 3px;
-   }
-   
-   
-   /* ---- particles.js container ---- */
-   @font-face{
-     font-family:GT-Super-Display-Super;
-     src: url("font/GT-Super-Display-Super.woff");
-   }
-   
-   @font-face{
-     font-family:Demi;
-     src: url("Typeface/bold.TTF");
-   }
-   
-   #particles-js{
-     width: 100%;
-     height: 100%;
-     background-color: transparent;
-     background-image: url('');
-     background-size: cover;
-     background-position: 50% 50%;
-     background-repeat: no-repeat;
-   }
-   
-   .text-container {
-     padding-left:10%;
-     padding-bottom:30px;
-     position: absolute;
-     top: 30vh;
-   }
-   
-   .topnav{
-     display: none;
-   }
-   
-   #big {
-     color: white;
-     font-family: GT-Super-Display-Super;
-     font-size: 70px;
-     max-width: 8ch;
-     animation: fadein 3s;
-     line-height: 100%;
-     padding-bottom: 15px;
-   }
-   
-   #small {
-     font-family:'Franklin Gothic Medium', sans-serif;
-     font-size:14px;
-     color: #ffffff;
-     opacity: 0.9;
-     max-width: 60ch;
-     letter-spacing: 1px;
-     padding-bottom: 50px;
-     animation: fadein 3s;
-     line-height: 22px;
-   }
-   
-   #message {
-     color: white;
-     font-family: 'Franklin Gothic Medium';
-     font-size:8px;
-     transform: rotate(90deg);
-     position: absolute;
-     top: 45vh;
-     right: -60px;
-     letter-spacing: 2px;
-     animation: fadein 3s;
-   }
-   
-   .explore{
-     padding:15px 34px;
-     background:transparent;
-     font-size:15px;
-     text-align:center;
-     font-style: unset;
-     color: #ffffff;
-     border: 2px solid #ffffff;
-     font-family: Demi;
-     animation: fadein 3s;
-     transition-duration: 0.4s;
-     z-index:1;
-   }
-   
-   .explore:hover {
-     background-color: white;
-     color: black;
-   }
-   
-   /* navigation */
-   #links {
-     padding:20px 70px 20px 0px;
-     list-style-type: none;
-     overflow: hidden;
-   }
-   
-   .tabs{
-     float: right;
-   }
-   
-   li .eachlink{
-     display:block;
-     font-size:15px;
-     color: lightgray;
-     padding: 10px 30px;
-     text-decoration: none;
-     font-family: Demi, sans-serif;
-   }
-   
-   li .eachlink:hover:not(.active) {
-     color: white;
-   }
-   
-   li {
-     font-size: 15px;
-     line-height: 30px;
-   }
-   
-   
-   * {
-     border:0 none;
-     position: relative; 
-     outline: none;
-   }
-   
-   .tabs > a:before {
-     content: "";
-     position: absolute;
-     width: 70%;
-     height: 3px;
-     bottom: 0;
-     right: 10;
-     background: white;
-     visibility: hidden;
-     border-radius: 5px;
-     transform: scaleX(0);
-     transition: .25s linear;
-   }
-   .tabs > a.short:before {
-     width:54%;
-   }
-   
-   .tabs > a.activate:before,
-   .tabs > a:hover:before,
-   .tabs > a:focus:before {
-     visibility: visible;
-     transform: scaleX(1);
-   }
-   
-   
-   
-   @media (max-width: 600px) {
-     .navigation {
-       display: none;
-     }
-     .topnav {
-       display:block;
-       overflow: hidden;
-     }
-     /* Style the links inside the navigation bar */
-     .topnav a {
-       float: left;
-       display: block;
-       color:   white;
-       text-align: center;
-       padding: 30px 20px;
-       text-decoration: none;
-       font-size: 15px;
-       font-family: Demi;
-     }
-     
-     /* Change the color of links on hover */
-     .topnav a:hover {
-       background-color: black;
-       color: white;
-     }
-     
-     /* Hide the link that should open and close the topnav on small screens */
-     .topnav .icon {
-       display: none;
-     }
-   
-     .topnav a {
-       display: none;
-     }
-   
-     .topnav a.icon {
-       display: block;
-       float:right;
-     }
-   
-     .topnav a.activate {
-       background-color: white;
-       color: black;
-   
-     }
-   
-     .topnav.responsive {position: relative;}
-     .topnav.responsive a.icon {
-       position: absolute;
-       right:0;
-       top:0;
-     }
-     .topnav.responsive a {
-       float: none;
-       display: block;
-       text-align: left;
-     }
-   
-     .text-container {
-       padding-left: 40px;
-     }
-   
-     #big {
-       font-size: 65px;
-       max-width: 8ch;
-     }
-   
-     #small {
-       font-size: 12px;
-       max-width: 40ch; 
-     }
-   
-     #message {
-       top:25vh;
-     }
-   }
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+}
+
+canvas{
+  display:block;
+  width:100%;
+}
+
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+@font-face{
+  font-family:GT-Super-Display-Super;
+  src: url("../font/GT-Super-Display-Super.woff");
+}
+
+@font-face{
+  font-family:Demi;
+  src: url("../../Typeface/bold.TTF");
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  padding-left:10%;
+  padding-bottom:30px;
+  position: absolute;
+  top: 30vh;
+}
+
+.topnav{
+  display: none;
+}
+
+#big {
+  color: white;
+  font-family: GT-Super-Display-Super;
+  font-size: 70px;
+  max-width: 8ch;
+  animation: fadein 3s;
+  line-height: 100%;
+  padding-bottom: 15px;
+}
+
+#small {
+  font-family:'Franklin Gothic Medium', sans-serif;
+  font-size:14px;
+  color: #ffffff;
+  opacity: 0.9;
+  max-width: 60ch;
+  letter-spacing: 1px;
+  padding-bottom: 50px;
+  animation: fadein 3s;
+  line-height: 22px;
+}
+
+#message {
+  color: white;
+  font-family: 'Franklin Gothic Medium';
+  font-size:8px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 45vh;
+  right: -60px;
+  letter-spacing: 2px;
+  animation: fadein 3s;
+}
+
+.explore{
+  padding:15px 34px;
+  background:transparent;
+  font-size:15px;
+  text-align:center;
+  font-style: unset;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: Demi;
+  animation: fadein 3s;
+  transition-duration: 0.4s;
+  z-index:1;
+}
+
+.explore:hover {
+  background-color: white;
+  color: black;
+}
+
+/* navigation */
+#links {
+  padding:20px 70px 20px 0px;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.tabs{
+  float: right;
+}
+
+li .eachlink{
+  display:block;
+  font-size:15px;
+  color: lightgray;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-family: Demi, sans-serif;
+}
+
+li .eachlink:hover:not(.active) {
+  color: white;
+}
+
+li {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+
+* {
+  border:0 none;
+  position: relative; 
+  outline: none;
+}
+
+.tabs > a:before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  bottom: 0;
+  right: 10;
+  background: white;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+.tabs > a.short:before {
+  width:54%;
+}
+
+.tabs > a.activate:before,
+.tabs > a:hover:before,
+.tabs > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  .topnav {
+    display:block;
+    overflow: hidden;
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color:   white;
+    text-align: center;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Demi;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+    float:right;
+  }
+
+  .topnav a.activate {
+    background-color: white;
+    color: black;
+
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right:0;
+    top:0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .text-container {
+    padding-left: 40px;
+  }
+
+  #big {
+    font-size: 65px;
+    max-width: 8ch;
+  }
+
+  #small {
+    font-size: 12px;
+    max-width: 40ch; 
+  }
+
+  #message {
+    top:25vh;
+  }
+}

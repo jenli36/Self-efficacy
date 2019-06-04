@@ -91,7 +91,7 @@ p{
 }
 
 .left{
-  padding-left:70px;
+  padding-left:7%;
   padding-top:200px;
 }
 .right{
@@ -127,8 +127,8 @@ img{
   max-width: 76ch;
 }
 .title, .row{
-  padding-left:70px;
-  padding-right:70px;
+  padding-left:7%;
+  padding-right:7%;
 }
 
 
@@ -137,9 +137,12 @@ img{
   display:flex;
   justify-content: space-between;
 }
+.spaceleft{
+  padding-left:30px;
+}
 .description{
   padding-top:15px;
-  max-width: 36ch;
+  max-width: 40ch;
 }
 
 
@@ -161,7 +164,7 @@ button:hover{
 
 #whatis{
   padding-top:100px;
-  padding-right:70px;
+  padding-right:7%;
   float:right;
 }
 
@@ -197,12 +200,12 @@ h3{
   line-height:22px;
 }
 .leftbot{
-  padding-left:70px;
+  padding-left:7%;
   max-width: 45ch;
 }
 .rightbot{
   width:50%;
-  padding-right:70px;
+  padding-right:7%;
 }
 .bottom{
   font-size:12px;
