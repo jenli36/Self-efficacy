@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="TeamOne">
+  <title>What is Self-Efficacy</title>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/whatIs.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <div class="navigation">
+        <ul id="links">
+            <li class="tabs"><a href="../letter page/letter.html">Letter from Creators</a></li>
+            <li class="tabs"><a class ="activate"href="#whatIs">What is Self-efficacy</a></li>
+            <li class="tabs"><a href="../discovery page/discovery.html">Resources</a></li>
+        </ul>
+    </div>
+
+    <section class="intro">
+        <div class="first">
+            <h3 class="boldtitle">Let's Learn About Self-Efficacy</h3>
+        </div>
+        <div class="second">
+            <p class="bold">"Self-efficacy is the belief in your ability in performing tasks successfully. 
+                Self-efficacy is a sense of competence, efficiency, and the ability to cope 
+                with life."
+            </p>
+            <p class="light">Your sense of self-efficacy begins to form in early childhood, as you deal 
+                with a variety of experiences, tasks, and situations. Your sense of self-efficacy 
+                evolves as you learn, experience, and develop both physically and mentally.
+            </p>
+            <p class="light">Sometimes it’s challenging to differentiate self-efficacy from other colloquial 
+                terms we use on a daily basis such as self-esteem, confidence and motivation and 
+                resilience.The information below shows how self-efficacy differs from each of these terms. 
+            </p>
+        </div>
+    </section>
+
+    <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="eachslide">
+                    <div class ="leftText">
+                        <h3 class="slidetitle">SELF-EFFICACY<br>VS RESILIENCE</h3>
+                        <p class="slidetext">While experiences of success certainly make up a large portion of self-efficacy 
+                            development, there is also room for failure. Those with a high level of self-efficacy are not only 
+                            more likely to succeed, they are also more likely to bounce back and recover from failure. 
+                            This is the ability at the heart of resilience, and it is greatly impacted by self-efficacy. 
+                        </p>            
+                    </div>
+                    <div class ="image_container">
+                        <img src="../illustrations/New/head_1-01.png">  
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="eachslide">
+                    <div class ="image_container">
+                        <img src="../illustrations/New/head_3-01.png">  
+                    </div>
+                    <div class ="rightText">
+                        <h3 class="slidetitle">SELF-EFFICACY<br>VS CONFIDENCE </h3>
+                        <p class="slidetext">Although self-efficacy is also positively related to confidence, the term confidence 
+                            is more general than self-efficacy. While confidence refers to your strength of beliefs, self-efficacy 
+                            refers specifically to your belief in your in your competence and capabilities (Bandura, 1997, p. 382).
+                        </p>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="mySlides fade">
+                    <div class="eachslide">
+                        <div class ="leftText">
+                                <h3 class="slidetitle">SELF-EFFICACY<br>VS SELF-ESTEEM</h3>
+                            <p class="slidetext">Self-esteem is conceptualized as a sort of general or overall feeling of one’s worth or value 
+                            (Neill, 2005). While self-esteem is focused more on “being” (e.g., feeling that you are perfectly acceptable as 
+                            you are), self-efficacy is more focused on “doing” (e.g., feeling that you are up to a challenge).
+                        </p>
+                            </p>
+                        </div>
+                        <div class ="image_container">
+                            <img src="../illustrations/New/head_2-01.png">  
+                        </div>
+                    </div>
+                </div>
+    
+            <div class="mySlides fade">
+                <div class="eachslide">
+                    <div class ="image_container">
+                        <img src="../illustrations/New/head4-01.png"> 
+                    </div>
+                    <div class ="rightText">
+                            <h3 class="slidetitle">SELF-EFFICACY<br>VS MOTIVATION </h3>
+                            <p class="slidetext">Similarly, although self-efficacy and motivation are deeply entwined, they are also 
+                                two separate constructs. Self-efficacy is based on an individual’s belief in their own capacity to achieve, 
+                                while motivation is based on the individual’s desire to achieve. Clearly, those with high self-efficacy likely 
+                                have high motivation and vice versa, but it is not a direct correlation. 
+                    </div>
+                </div>
+            </div>
+                      
+          
+            <!-- Next and previous buttons -->
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+          
+          <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+    
+
+    <div class="nextsection">
+        <h3 class="boldtitle2">Self-Efficacy Development</h3>
+        <p class="lightpara">Self-efficacy can be developed and formed in more multiple ways. Four major components 
+            that heavily influence your self-efficacy are mastery experience, social modeling, verbal 
+            persuasion, and psychological response. 
+        </p>
+    </div>
+
+    <section>
+        <div class="content">
+            <div class="row">
+                <div class="text_container">
+                    <h3 class="eachtitle">1. Master Experience</h3>
+                    <p class="eachtext">Mastery experiences refer to the idea that successful experiences help people to build up 
+                        confidences and strength to overcome challenges. <br><br>
+                        <strong>Sample</strong>: Sam, once participated in a Hackathon, and wins the final challenge. This mastery 
+                        experience boosts Sam’s self-efficacy. As a result, Sam is actively looking for new Hackathon 
+                        to challenge himself and is assured in his skill as a Computer Scientist.                  
+                    </p>
+                </div>
+                <div class="image_container2 rightimage">
+                    <img class="img2" src="../illustrations/New/master.png">
+                </div>
+            </div>
+  
+            <div class="row">
+                <div class="image_container2">
+                    <img class="img2" src="../illustrations/New/social.png">
+                </div>
+                <div class="text_container2">
+                    <h3 class="eachtitle">2. Social Modeling</h3>
+                    <p class="eachtext">Social Modeling refers to the idea that through observing  people similar to oneself succeed,
+                        it raises the observer’s belief that they too have the capabilities to succeed.<br><br>
+                        <strong>Sample</strong>:  Linda is an international student from China and she is not comfortable with her 
+                        English skills. However, Linda’s classmate Jack is who is also from China and is fluent in 
+                        English shares his experience with Linda and the challenges he overcame throughout the years. 
+                        Seeing Jack’s success today, Linda is willing to challenge herself and believes that she can 
+                        also  overcome the language barrier one day. 
+                    </p>    
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="text_container">
+                    <h3 class="eachtitle">3. Verbal Persuation</h3>
+                    <p class="eachtext">Verbal persuasion refers to the idea that people could be persuaded to believe that they 
+                            have the skills and capabilities to succeed by families, friends, instructors and so on.<br><br> 
+                            <strong>Sample</strong>: John is struggling in his technical writing class, but his professor keeps on 
+                            encouraging him through one on one conversations, writing assignments and always telling 
+                            John that he can be a great writer if he put his minds into it. As a result, John never gave 
+                            up on trying and ended up improving his writing skills and is now confident in his technical 
+                            writing skills.             
+                    </p>
+                </div>
+                <div class="image_container2 rightimage">
+                    <img class="img2" src="../illustrations/New/verbal.png">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="image_container2">
+                    <img class="img2" src="../illustrations/New/psych.png">
+                </div>
+                <div class="text_container2">
+                    <h3 class="eachtitle">4. Psychological Response</h3>
+                    <p class="eachtext">Psychological responses refers to the idea that moods, emotional states, physical reactions,
+                        and stress levels can all impact how a person feels about their personal abilities in a particular 
+                        situation.<br><br>
+                        <strong>Sample</strong>: Amy always wants to learn a new programming language and attempts to teach herself during 
+                        the school year. Due to heavy workloads from school and social events, Amy becomes highly stressed 
+                        and isn’t able to focus, becoming frequently frustrated when she encounters challenges during her 
+                        learning process. When Amy tries again during her summer break, she finds her learning more enjoyable 
+                        and has more patience to troubleshoot when she encounters challenges. 
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    
+
+    <section class="lastsection">
+        <div class="title">
+            <h3 class="boldtitle3">Negative Effects of Low Self-Efficacy</h3>
+        </div>
+        <div class="lastlist">
+            <ul style="list-style-type:none;">
+                <strong>
+                    <li>+ Easier to withdraw from difficult tasks</li>
+                    <li>+ Have low aspirations and a weaker commitment to the goals</li>
+                    <li>+ Are more likely to be less engaged in healthy behaviors</li>
+                    <li>+ Slower to recover from failures</li>
+                    <li>+ Tend to not believe things are in their control</li>
+                    <li>+ Difficult to regulate their emotions</li>
+                    <li>+ Focuses on personal failings and negative outcomes</li>
+                    <li>+ Suffer from stress, isolation, and other mental health problems.</li>
+                </strong>
+            </ul>
+        </div>
+    </section>
+
+    <div id ="letter"><button onclick="location.href='../letter page/letter.html'">LETTER FROM CREATORS ></button></div>
+    
+    <footer id="end">
+        <div class="leftbot">
+            <h3 class="footerh3">Installation Time & Location</h3>
+            <br>
+            <p class="bottom">June 10th from 4:00PM - 6:00PM</p>
+            <br>
+            <p class="bottom">Bill&Melinda Gates Center</p>
+            <p class="bottom">University of Washington, 3800 E Stevens Way NE, Seattle, WA 98195</p>
+            <br>
+            <br>
+            <p class="bottom">Team One Created with Love.</p>
+            <p class="bottom">@ALL RIGHT RESERVED BY TEAM ONE</p>
+        </div>
+
+        <div class="rightbot">
+            <h3 id="credit">CREDITS:</h3>
+            <p class="bottom">We want to give a special thanks to our instructors of CSE441-DES372, Katharina Reinecke 
+            and Audrey Desjardins, for their guidance throughout the quarter. In addition, we would also 
+            like to thank our Teaching Assistance Manaswi Saha and Cayla Key for their love and support.</p>
+            <br>
+            <br>
+            <h3 id="ack">ACKNOWLEDGEMENTS:</h3>
+            <p class="bottom">Please note this site is intended for a class project and may contain links,
+                resources and content that belongs to third parties. All contents are not investigated, 
+                monitored or checked for accuracy, adequacy, validity, reliability and availability or 
+                completeness by us. Viewer discretion is advised.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
