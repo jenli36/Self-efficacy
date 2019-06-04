@@ -33,9 +33,10 @@
 
     <div class="navigation">
         <ul id="links">
-            <li class="tabs"><a href="../letter page/letter.html">Letter from Creators</a></li>
+             <li class="tabs"><a href="../letter page/letter.html">Letter from Creators</a></li>
             <li class="tabs"><a href="../whatIs page/whatIs.html">What is Self-efficacy</a></li>
-            <li class="tabs"><a class="activate short" href="#resources">Resources</a></li>
+            <li class="tabs"><a class="activate" href="#resources">Resources</a></li>
+           
         </ul>
     </div>
 
@@ -45,7 +46,7 @@
             <p class="smalltext">Self-efficacy can be measured! Although it is prone to the same sorts of issues 
             as all self-report measurements, there are still several methodologically sound 
             ways to go about it. </p>
-            <img class="rightcopy" src="../illustrations/New/test.png">
+            <img class="rightcopy" src="../illustrations/New/testcopy.png">
             <p class="smalltextcopy">Self-efficacy can be measured! Although it is prone to the same sorts of issues 
                     as all self-report measurements, there are still several methodologically sound 
                     ways to go about it. </p>
@@ -205,11 +206,13 @@
             <script>
                 var acc = document.getElementsByClassName("accordion");
                 var i;
+
                 for (i = 0; i < acc.length; i++) {
                 acc[i].addEventListener("click", function() {
                     /* Toggle between adding and removing the "active" class,
                     to highlight the button that controls the panel */
                     this.classList.toggle("active");
+
                     /* Toggle between hiding and showing the active panel */
                     var panel = this.nextElementSibling;
                     if (panel.style.display === "block") {
@@ -224,6 +227,8 @@
                     } 
                 });
                 }
+
+
             </script>
  
     </div>
