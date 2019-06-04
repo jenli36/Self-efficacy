@@ -83,7 +83,7 @@
    
    @font-face{
      font-family:Demi;
-     src: url("../../Typeface/bold.TTF");
+     src: url("../Typeface/bold.TTF");
    }
    
    #particles-js{
@@ -222,7 +222,7 @@
    
    
    
-   @media (max-width: 600px) {
+   @media (max-width: 768px) {
      .navigation {
        display: none;
      }
