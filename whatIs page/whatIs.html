@@ -83,7 +83,7 @@
     
             <div class="mySlides fade">
                 <div class="eachslide">
-                    <div class ="image_container">
+                    <div class ="image_container" id="img3">
                         <img src="../illustrations/New/head_3-01.png">  
                     </div>
                     <div class ="rightText">
@@ -93,6 +93,9 @@
                             refers specifically to your belief in your in your competence and capabilities (Bandura, 1997, p. 382).
                         </p>
                     </div>
+                    <div class ="image_containercopy">
+                            <img src="../illustrations/New/head_3-01.png">  
+                        </div>
                 </div>
             </div>
           
@@ -114,19 +117,28 @@
     
             <div class="mySlides fade">
                 <div class="eachslide">
-                    <div class ="image_container">
+                    <div class ="image_container" id="img4">
                         <img src="../illustrations/New/head4-01.png"> 
                     </div>
-                    <div class ="rightText">
+                    <div class ="rightText" id="text4">
                             <h3 class="slidetitle">SELF-EFFICACY<br>VS MOTIVATION </h3>
                             <p class="slidetext">Similarly, although self-efficacy and motivation are deeply entwined, they are also 
                                 two separate constructs. Self-efficacy is based on an individual’s belief in their own capacity to achieve, 
                                 while motivation is based on the individual’s desire to achieve. Clearly, those with high self-efficacy likely 
                                 have high motivation and vice versa, but it is not a direct correlation. 
                     </div>
+                    <div class ="image_containercopy" id="img4copy">
+                            <img src="../illustrations/head4-01_fixed-01 copy.png"> 
+                        </div>
                 </div>
             </div>
-                      
+            
+            <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
           
             <!-- Next and previous buttons -->
 
@@ -136,12 +148,7 @@
         <br>
           
           <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-        </div>
+        
     
     <script>
         var slideIndex = 1;
