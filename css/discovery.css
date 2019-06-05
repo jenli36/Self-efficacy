@@ -285,6 +285,7 @@ h3{
 }
 
 #launch {
+  z-index:1;
   float: left;
 }
 
