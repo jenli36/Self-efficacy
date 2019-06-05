@@ -17,6 +17,8 @@
     padding:0px;
 }
 
+
+
 .text_container, .text_container2 {
     height: 600px;
 
@@ -120,6 +122,10 @@ background-image: url("../image/background.png");
     font-size:15px;
     line-height:22px;
     max-width:66ch;
+}
+
+#quote{
+    text-indent: -8px;
 }
 
 .banner{
@@ -449,11 +455,40 @@ img{
         display: none;
     }
 
+    hr {
+        display: none;
+    }
+
   @media (max-width: 768px) {
       .intro {
           display: block;
           padding-left: 0px;
 
+      }
+
+      hr { 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+      }
+
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -50px;
+        padding: 20px;
+        color: grey;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
       }
 
       .navigation {
@@ -532,7 +567,7 @@ img{
 
       .second {
         font-size: 10px;
-        max-width: 70ch;
+        max-width: 65ch;
       }
 
       .slidetitle {
@@ -590,10 +625,6 @@ img{
       }
 
       #img4 {
-          display: none;
-      }
-
-      .prev, .next {
           display: none;
       }
 
@@ -657,7 +688,7 @@ img{
 
     .eachtext {
         padding-top: 15px;
-        font-size: 12px;
+        padding-bottom: 10px;
     }
 
     .image_container2 {
@@ -668,7 +699,7 @@ img{
     .devimg {
         display: block;
         margin-right: 20px;
-        margin-top: 40px;
+        margin-top: 70px;
     }
 
     .img2 {
@@ -685,7 +716,7 @@ img{
     }
 
     .lastsection {
-        margin-top: 200px;
+        margin-top: 250px;
         display: block;
         padding-left: 25px;
         padding-right: 20px;
@@ -710,10 +741,6 @@ img{
         font-size: 14px;
       }
 
-      #end {
-          margin-top: 130px;
-      }
-
       #socialcopy {
           width: 75%;
           height:75%;
@@ -721,4 +748,5 @@ img{
           margin-bottom: 30px;
           margin-top: 10px;
       }
+    }
   }
