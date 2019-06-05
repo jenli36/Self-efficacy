@@ -39,7 +39,7 @@ li a{
     color: #666;
     padding: 10px 30px;
     text-decoration: none;
-    font-family: FranklinGothic, sans-serif;
+    font-family: Demi, sans-serif;;
 }
   
 li a:hover:not(.active) {
