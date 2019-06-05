@@ -441,6 +441,10 @@ img{
         display: none;
     }
 
+    .devimg {
+        display: none;
+    }
+
   @media (max-width: 768px) {
       .intro {
           display: block;
@@ -620,4 +624,84 @@ img{
         padding-bottom: 20px;
     }
 
+    .nextsection {
+        padding-left: 25px;
+        padding-top: 0px;
+        padding-bottom: 0px; 
+    }
+
+    .boldtitle2 {
+        font-size: 35px;
+        max-width: 12ch;  
+    }
+
+    .lightpara {
+        max-width: 42ch;
+    }
+
+    .row {
+     display: block;
+     padding-bottom: 0px;
+     height: 600px;
+    }
+
+    .text_container {
+        background-color: white;
+        margin-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .text_container2 {
+        background-color: white;
+        margin-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .eachtitle {
+        font-size: 20px;
+        padding-top: 0px;
+    }
+
+    .eachtext {
+        padding-top: 15px;
+        font-size: 12px;
+    }
+
+    .image_container2 {
+        display: none;
+
+    }
+
+    .devimg {
+        display: block;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+
+    .img2 {
+        height:100%;
+        width: 100%;
+    }
+
+    #verbalcopy {
+        width: 80%;
+        margin-left: 40px;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .lastsection {
+        margin-top: 200px;
+        display: block;
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+
+    .boldtitle3 {
+        font-size: 35px;
+    }
+
+    #letter {
+        display: none;
+    }
   }
