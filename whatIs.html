@@ -8,10 +8,32 @@
   <title>What is Self-Efficacy</title>
 
   <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/whatIs.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
+
+        <div class="topnav" id="myTopnav">
+                <a href="discovery.html">Resources</a>
+                <a class = "active" href="whatIs.html">What is Self-efficacy</a>
+                <a href="letter.html">Letter from Creators</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+        </script>
 
     <div class="navigation">
         <ul id="links">
@@ -54,15 +76,15 @@
                         </p>            
                     </div>
                     <div class ="image_container">
-                        <img src="../illustrations/New/head_1-01.png">  
+                        <img src="illustrations/New/head_1-01.png">  
                     </div>
                 </div>
             </div>
     
             <div class="mySlides fade">
                 <div class="eachslide">
-                    <div class ="image_container">
-                        <img src="../illustrations/New/head_3-01.png">  
+                    <div class ="image_container" id="img3">
+                        <img src="illustrations/New/head_3-01.png">  
                     </div>
                     <div class ="rightText">
                         <h3 class="slidetitle">SELF-EFFICACY<br>VS CONFIDENCE </h3>
@@ -71,6 +93,9 @@
                             refers specifically to your belief in your in your competence and capabilities (Bandura, 1997, p. 382).
                         </p>
                     </div>
+                    <div class ="image_containercopy">
+                            <img src="illustrations/New/head_3-01.png">  
+                        </div>
                 </div>
             </div>
           
@@ -85,26 +110,35 @@
                             </p>
                         </div>
                         <div class ="image_container">
-                            <img src="../illustrations/New/head_2-01.png">  
+                            <img src="illustrations/New/head_2-01.png">  
                         </div>
                     </div>
                 </div>
     
             <div class="mySlides fade">
                 <div class="eachslide">
-                    <div class ="image_container">
-                        <img src="../illustrations/New/head4-01.png"> 
+                    <div class ="image_container" id="img4">
+                        <img src="illustrations/New/head4-01.png"> 
                     </div>
-                    <div class ="rightText">
+                    <div class ="rightText" id="text4">
                             <h3 class="slidetitle">SELF-EFFICACY<br>VS MOTIVATION </h3>
                             <p class="slidetext">Similarly, although self-efficacy and motivation are deeply entwined, they are also 
                                 two separate constructs. Self-efficacy is based on an individual’s belief in their own capacity to achieve, 
                                 while motivation is based on the individual’s desire to achieve. Clearly, those with high self-efficacy likely 
                                 have high motivation and vice versa, but it is not a direct correlation. 
                     </div>
+                    <div class ="image_containercopy" id="img4copy">
+                            <img src="illustrations/New/head4-01 copy.png"> 
+                        </div>
                 </div>
             </div>
-                      
+            
+            <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
           
             <!-- Next and previous buttons -->
 
@@ -114,27 +148,19 @@
         <br>
           
           <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-        </div>
+        
     
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
-
         // Next/previous controls
         function plusSlides(n) {
         showSlides(slideIndex += n);
         }
-
         // Thumbnail image controls
         function currentSlide(n) {
         showSlides(slideIndex = n);
         }
-
         function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
@@ -161,9 +187,12 @@
         </p>
     </div>
 
-    <section>
+    <section class="develop">
         <div class="content">
             <div class="row">
+                    <div class="devimg">
+                            <img class="img2" src="../illustrations/New/master.png">
+                        </div>
                 <div class="text_container">
                     <h3 class="eachtitle">1. Master Experience</h3>
                     <p class="eachtext">Mastery experiences refer to the idea that successful experiences help people to build up 
@@ -180,8 +209,11 @@
   
             <div class="row">
                 <div class="image_container2">
-                    <img class="img2" src="../illustrations/New/social.png">
+                    <img class="img2" src="illustrations/New/social.png">
                 </div>
+                <div class="devimg">
+                        <img class="img2" id="socialcopy" src="illustrations/New/social copy.png">
+                    </div>
                 <div class="text_container2">
                     <h3 class="eachtitle">2. Social Modeling</h3>
                     <p class="eachtext">Social Modeling refers to the idea that through observing  people similar to oneself succeed,
@@ -196,6 +228,9 @@
             </div>
 
             <div class="row">
+                    <div class="devimg">
+                            <img class="img2" id="verbalcopy" src="illustrations/New/verbal copy.png">
+                        </div>
                 <div class="text_container">
                     <h3 class="eachtitle">3. Verbal Persuation</h3>
                     <p class="eachtext">Verbal persuasion refers to the idea that people could be persuaded to believe that they 
@@ -208,14 +243,17 @@
                     </p>
                 </div>
                 <div class="image_container2 rightimage">
-                    <img class="img2" src="../illustrations/New/verbal.png">
+                    <img class="img2" src="illustrations/New/verbal.png">
                 </div>
             </div>
 
             <div class="row">
                 <div class="image_container2">
-                    <img class="img2" src="../illustrations/New/psych.png">
+                    <img class="img2" src="illustrations/New/psych.png">
                 </div>
+                <div class="devimg">
+                        <img class="img2" src="illustrations/New/psych.png">
+                    </div>
                 <div class="text_container2">
                     <h3 class="eachtitle">4. Psychological Response</h3>
                     <p class="eachtext">Psychological responses refers to the idea that moods, emotional states, physical reactions,

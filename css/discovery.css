@@ -475,7 +475,7 @@ h3{
     line-height: 18px;
   }
 
-  .topnav {
+.topnav {
     display: block;
   }
 
@@ -489,15 +489,14 @@ h3{
     display: block;
     color:   black;
     text-align: center;
-    padding: 20px 15px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 15px;
     font-family: Demi;
-    background-color: #f7f6f3;
   }
   
   /* Change the color of links on hover */
- #myTopnav a:hover {
+  .topnav a:hover {
     background-color: #f7f6f3;
     color: black;
   }
@@ -505,30 +504,21 @@ h3{
   /* Add an active class to highlight the current page */
   .active {
     background-color:  #f7f6f3;
-    color: black;
+    color: white;
   }
-  
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
-    display: none;
+    float: right;
+    display: block;
   }
 
   .topnav a {
     display: none;
   }
 
-  .topnav a.icon {
-    float: right;
-    display: block;
-    font-size: 25px;
-    padding: 20px 15px;
-  }
-
-
   .topnav a.activate {
-    background-color: black;
-    color: white;
-
+    background-color:  #f7f6f3;
+    color: black;
   }
 
   .topnav.responsive {position: relative;}

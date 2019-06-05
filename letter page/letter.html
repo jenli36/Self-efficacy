@@ -6,17 +6,38 @@
   <meta name="description" content="">
   <meta name="author" content="TeamOne" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" media="screen" href="css/letter.css">
 </head>
 <body>
 
+    <div class="topnav" id="myTopnav">
+        <a class="short" href="discovery.html">Resources</a>
+        <a href="whatIs.html">What is Self-efficacy</a>
+        <a class = "active" href="letter.html">Letter from Creators</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
 
     <div class="navigation">
         <ul id="links">
 
             <li class="tabs"><a class ="activate" href="#letter">Letter from Creators</a></li>
-            <li class="tabs"><a href="../whatIs page/whatIs.html">What is Self-efficacy</a></li>
-            <li class="tabs"><a href="../discovery page/discovery.html">Resources</a></li>
+            <li class="tabs"><a href="whatIs.html">What is Self-efficacy</a></li>
+            <li class="tabs"><a href="discovery.html">Resources</a></li>
 
         </ul>
     </div>
@@ -25,7 +46,7 @@
             <div class="title">
                 <h1 class="quote">&ldquo;It is our passion to talk to you about self–efficacy…&rdquo;</h1>      
             </div>
-            <div class="img_container"><img src="../illustrations/New/team.png"></div>
+            <div class="img_container"><img src="illustrations/New/team.png"></div>
         </div>
 
         <div class="right">
