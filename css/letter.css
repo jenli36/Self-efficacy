@@ -235,11 +235,12 @@ footer{
     .letter{
         display: block;
         padding-top:20px;
+        justify-content: center;
         padding-bottom:30px;
         width:100%;
     }
     h1{
-        font-size:35px;
+        font-size:40px;
         max-width: none;
     }
     h1.desktop {
@@ -249,8 +250,8 @@ footer{
         display:block;
     }
     .left,.right{
-        padding-left:35px;
-        padding-right:35px;
+        padding-left:30px;
+        padding-right:30px;
         width:100%;
     }
     .quote{
