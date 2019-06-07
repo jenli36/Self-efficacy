@@ -124,12 +124,12 @@ footer{
     line-height:22px;
   }
   .leftbot{
-    padding-left:70px;
-    max-width: 45ch;
+    padding-left:7%;
+    max-width: 60ch;
   }
   .rightbot{
     width:50%;
-    padding-right:70px;
+    padding-right:7%;
   }
   .bottom{
     font-size:12px;

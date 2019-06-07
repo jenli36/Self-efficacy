@@ -64,10 +64,6 @@ h1{
   font-size:50px;
 }
 
-.background{
-  padding:20px;
-  background-color: #f7f6f3;
-}
 
 .eachresource{
   font-size:20px;
@@ -112,10 +108,12 @@ img{
 
 /* resources section */
 .resources{
-  background-color: #f7f6f3;
-  margin-top:50px;
   padding-top:100px;
   padding-bottom:228px;
+}
+.resources_container {
+  background-color: #f7f6f3;
+  padding-top:50px;
 }
 
 .small {
@@ -133,9 +131,12 @@ img{
   display:flex;
   justify-content: space-between;
 }
+.spaceleft{
+  padding-left:40px;
+}
 .description{
   padding-top:15px;
-  max-width: 36ch;
+  max-width: 43ch;
 }
 
 
@@ -193,12 +194,12 @@ h3{
   line-height:22px;
 }
 .leftbot{
-  padding-left:10%;
-  max-width: 45ch;
+  padding-left:7%;
+  max-width: 60ch;
 }
 .rightbot{
   width:50%;
-  padding-right:10%;
+  padding-right:7%;
 }
 .bottom{
   font-size:12px;
