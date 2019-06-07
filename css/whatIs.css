@@ -410,6 +410,10 @@ img{
   background-color: #717171;
 }
 
+.active {
+    background-color: black;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -476,7 +480,44 @@ img{
         display: none;
     }
 
+    .confidencecopy {
+        display: none;
+    }
+
+    .motivationcopy {
+        display: none;
+    }
+
 @media (max-width: 768px) {
+
+    .image_container_left {
+        display: none;
+    }
+
+    .motivationcopy {
+        display: block; 
+        width: 85%;
+    }
+
+    #finalcopy {
+        width: 85%;
+    }
+
+    #self {
+        padding-right: 40px;
+        padding-left: 100px;
+    }
+
+    .confidencecopy {
+        padding-top: 20px;
+        display: block;
+        width: 85%;
+    }
+
+    #confidence2 {
+        width: 85%;
+    }
+
     .intro {
         display: block;
         padding-top:20px;
@@ -551,7 +592,7 @@ img{
     }
     
     /* Add an active class to highlight the current page */
-    .active {
+    a:active {
         background-color:  #f7f6f3;
         color: white;
     }
@@ -568,6 +609,10 @@ img{
     .topnav a.activate {
         background-color: black;
         color: white;
+    }
+
+    #whatis {
+        background-color: #f7f6f3;
     }
 
     .topnav.responsive {position: relative;}
@@ -620,7 +665,7 @@ img{
     .image_container {
         width: 100%;
         height: 55%;
-        padding-top: 0px;
+        padding-top: 20px;
         padding-left: 130px;
         padding-right:0px;
         padding-bottom: 10px;
@@ -647,11 +692,18 @@ img{
         padding-top: 50px;
     }
 
+    li {
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
     .dot {
         width: 12px;
         height:12px;
     }
 
+    .content {
+        padding-right: 10px;
+    }
 
 #img4copy {
     display: block;

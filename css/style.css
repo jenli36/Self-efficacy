@@ -99,6 +99,7 @@
    .text-container {
      padding-left:10%;
      padding-bottom:30px;
+     padding-top: 110px;
      position: absolute;
      top: 30vh;
    }

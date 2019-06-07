@@ -459,11 +459,16 @@ h3{
     justify-content: space-between;
   }
   .leftbot {
-    padding-left: 35px;
+    padding-left: 25px;
+  }
+
+  .dot active {
+    color: black;
   }
 
   .bottom {
     line-height: 18px;
+    max-width: 50ch;;
   }
 
   .rightbot {

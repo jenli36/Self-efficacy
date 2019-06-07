@@ -75,6 +75,7 @@ p.bottom{
     font-style:italic;
 }
 
+
 .letter{
     padding-top:80px;
     padding-bottom:80px;
@@ -182,6 +183,11 @@ footer{
     .topnav {
         overflow: hidden;
     }
+
+    .leftbot {
+        max-width: 50ch;
+    }
+
   
     /* Style the links inside the navigation bar */
     .topnav a {
