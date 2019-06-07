@@ -457,6 +457,7 @@ h3{
     color:white;
     display: flex;
     justify-content: space-between;
+    z-index:999;
   }
   .leftbot {
     padding-left: 35px;
