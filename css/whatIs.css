@@ -19,12 +19,11 @@
 
 
 
-.text_container, .text_container2 {
-    height: 600px;
-
-}
 
 /* navigation */
+.topnav{
+    display:none;
+}
 #links {
     padding:20px 70px 20px 0px;
     list-style-type: none;
@@ -40,7 +39,7 @@ li a{
     font-size:15px;
     color: #666;
     padding: 10px 30px;
-    text-decoration: none;
+    text-decoration: none; 
     font-family: Demi, sans-serif;;
 }
   
@@ -50,12 +49,10 @@ li a:hover:not(.active) {
   
 li a.activate {
     color: black;
-    font-size: 16px;
     font-family: Demi;
   }
 li {
     font-size: 15px;
-    font-family: FranklinGothic, sans-serif;
     line-height: 30px;
 }
 
@@ -63,23 +60,27 @@ li {
 .first, .second{
     width:50%;
 }
-.first {
-background-image: url("../image/background.png");
+.quote{
+    text-indent:-8px;
 }
+/* .first {
+    background-image: url("image/background.png");
+} */
 .second {
-    max-width: 60ch;
+    padding-left:30px;
+    max-width: 80ch;
 }
 .intro{
     padding-top: 100px;
     display:flex;
-    padding-left: 70px;
+    padding-left: 10%;
+    padding-right:10%;
     padding-bottom: 100px;
 }
 .bold, .light{
     font-family:FranklinGothic, sans-serif;
     font-size:15px;
     line-height:22px;
-
 }
 .bold {
     padding-top:18px;
@@ -91,7 +92,7 @@ background-image: url("../image/background.png");
 
 /* setting for nextseciton */
 .nextsection {
-    padding-left: 70px;
+    padding-left: 10%;
     padding-top: 100px;
     padding-bottom:120px;
 }
@@ -124,14 +125,6 @@ background-image: url("../image/background.png");
     max-width:66ch;
 }
 
-#quote{
-    text-indent: -8px;
-}
-
-.banner{
-    color:black;
-    padding-left: 70px;
-}
 
 .sectiontitle {
     font-size: 25px;
@@ -146,47 +139,54 @@ background-image: url("../image/background.png");
 .row{
     display:flex;
     padding-bottom: 150px;
+    margin-left:10%;
+    margin-right:10%;
+    justify-content: space-between;
     height: 700px;
 }
 .image_container2{
-    width:100%;
+    width:55%;
     height:100%;
     object-fit: contain;
-    margin-left: 100px;
-
 }
-
-
-.img2{
-    height:100%;
-}
-
 .image_container2.rightimage{
-    padding-left:2px;
+    width:55%;
+    height:100%;
+    object-fit: contain;
+}
+#firstimage{
+    height:95%;
+}
+#secondimage{
+    height:120%;
+    margin-right:2%;
+}
+#fourthimage{
+    height:110%;
+    margin-right:2%;
+}
+.img2{
+    height:110%;
 }
 
-.image_container2 {
-    width: 50%;
-}
 .text_container,.text_container2 {
-    padding-left:40px;
-    padding-right:40px;
-    padding-bottom:150px;
+    width:500px;
+    padding-left:3%;
+    padding-right:5%;
+    padding-bottom:10%;
     background-color: #F7F6F3;
-    height: 500px;
 }
-.text_container{
-    margin-left:80px;
+/* .text_container{
+    margin-left:10%;
 }
 .text_container2{
-    margin-right:80px;
-}
+    margin-right:10%;
+} */
 .eachtitle {
     font-family:'Franklin Gothic Medium',sans-serif;
     padding-top:40px;
     font-family: Noe;
     font-size: 25px;
-
 }
 
 .eachtext {
@@ -202,10 +202,14 @@ background-image: url("../image/background.png");
     padding-top: 100px;
     display:flex;
     justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
     background-color: #F7F6F3;
     padding-bottom: 100px;
+}
+.lastlist {
+    padding-left:30px;
+    font-family: Demi, sans-serif;
 }
 
 button{
@@ -225,7 +229,7 @@ button:hover{
 
 #letter {
     padding-top: 100px;
-    padding-right: 80px;
+    padding-right: 10%;
     padding-bottom:200px;
 
 }
@@ -245,57 +249,68 @@ footer{
     display: flex;
     justify-content: space-between;
   }
-  .footerh3{
+  .footerh3, #credit,#ack{
     font-size:12px;
     line-height:22px;
   }
+  #credit,#ack{
+    font-family:'Franklin Gothic Medium',sans-serif;
+  }
   .leftbot{
-    padding-left:70px;
+    padding-left:7%;
     max-width: 45ch;
   }
   .rightbot{
     width:50%;
-    padding-right:70px;
+    padding-right:7%;
   }
   .bottom{
     font-size:12px;
     font-family: 'Franklin Gothic', sans-serif;
     line-height: 20px;
   }
-  #credit, #ack{
-    padding-bottom: 10px;
-  }
 
 /* slideshow setting */
+.dots {
+    padding-bottom: 10px;
+}
 .eachslide {
     display: flex;
-    background-color: #F7F6F3;
+    justify-content: space-between;
     height:500px;
 }
 .leftText{
     width:50%;
-    padding-left:120px;
+    padding-left:12%;
 }
 .rightText{
     width:50%;
-    padding-right:120px;
-    margin-left:120px;
+    padding-right:12%;
 }
 
 /* setting for the image in slideshow */
-.image_container{
-    padding-top:60px;
-    padding-right:100px;
-    padding-left:50px;
+.image_container_left, .image_container_right{
+    padding-top:20px;
     width:50%;
     height:100%;
-    object-fit: fill;
+    object-fit: contain;
 }
-
+.image_container_left{
+    margin-left:10%;
+    padding-right:12%;
+}
+.image_container_right{
+    margin-right:10%;
+    padding-left:12%;
+}
 img{
     height:120%;
 }
-
+/* #image4{
+    margin-top:80px;
+    height:120%;
+    margin-left:60px;
+} */
 
 /* setting the font-fam,font-size,padding for top&bottom for text on slides */
 
@@ -304,7 +319,7 @@ img{
     font-family: 'Franklin Gothic Medium', sans-serif;
     font-size: 40px;
     padding-bottom:30px;
-    width:500px;
+    width:100%;
 }
 
 
@@ -313,7 +328,7 @@ img{
     font-size: 15px;
     line-height:22px;
     max-width: 80ch;
-    width:430px;
+    width:100%;
 }
 
 
@@ -326,6 +341,7 @@ img{
   width: 100%; */
   position: relative;
   margin: auto;
+  background-color:#F7F6F3;
 }
 
 
@@ -437,6 +453,10 @@ img{
     transform: scaleX(0);
     transition: .25s linear;
   }
+  .tabs > a.short:before{
+    width:54%;
+  }
+  .tabs > a.activate:before,
   .tabs > a:hover:before,
   .tabs > a:focus:before {
     visibility: visible;
@@ -447,7 +467,7 @@ img{
         display: none;
     }
 
-    image_containercopy {
+    .image_containercopy {
         display: none;
     }
 
@@ -670,12 +690,14 @@ img{
     }
 
     .text_container {
+        width:100%;
         background-color: white;
         margin-left: 0px;
         padding-bottom: 0px;
     }
 
     .text_container2 {
+        width:100%;
         background-color: white;
         margin-right: 0px;
         padding-bottom: 0px;
@@ -749,4 +771,3 @@ img{
 
       }
     }
-  }
