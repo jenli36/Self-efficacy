@@ -813,4 +813,13 @@ img{
         margin-left: 50px;
         margin-bottom: 30px;
     }
+
+    footer {
+        padding-top: 25px;
+        padding-bottom: 50px;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }  
 }
