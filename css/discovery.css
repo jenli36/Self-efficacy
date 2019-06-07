@@ -398,7 +398,7 @@ h3{
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  .active, .accordion:hover,.accordion:focus {
     background-color: #ccc;
     color: black;
   }
@@ -425,7 +425,10 @@ h3{
     float: left;
     margin-bottom: 40px;
   }
-
+  .panelbutton:focus{
+    background-color:white;
+    color:black;
+  }
   .accordion:after {
     content: '\2795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
@@ -447,11 +450,6 @@ h3{
   .row {
     display: none;
   }
-  
-  .panel {
-    background-color: #f7f6f3;
-    color: black;
-  }
 
   .leftbot {
     padding-left: 35px;
@@ -467,7 +465,6 @@ h3{
     color:white;
     display: flex;
     justify-content: space-between;
-    z-index:2;
   }
   .rightbot {
     display: none;
