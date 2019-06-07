@@ -379,7 +379,7 @@ h3{
 
   /*mobilelist*/
   .mobilelist {
-    display: block !important;
+    display: block;
     padding-bottom: 120px;
   }
 
@@ -457,7 +457,6 @@ h3{
     color:white;
     display: flex;
     justify-content: space-between;
-    z-index:999;
   }
   .leftbot {
     padding-left: 35px;
