@@ -299,7 +299,6 @@ h3{
     padding-left: 0px;
     margin-block-start: 0px;
     margin-block-end: 0px;
-
   }
 
   .banner {
@@ -307,7 +306,7 @@ h3{
   }
 
   .right {
-  display: none;
+    display: none;
   }
 
   .rightcopy {
@@ -316,8 +315,8 @@ h3{
     width: 50vh;
     height: auto;
     margin-left: 10px;
+    margin-right:10px;
     margin-bottom: 20px;
-
   }
 
   .smalltext {
@@ -374,6 +373,15 @@ h3{
     display: none;
   }
 
+  footer{
+    padding-top:25px;
+    padding-bottom:50px;
+    background-color:black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    z-index:2;
+  }
   .rightbot {
     display: none;
   }
@@ -393,13 +401,13 @@ h3{
   }
 
   .accordion {
-    background-color: #eee;
+    background-color: #f7f6f3;
     color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
+    border:none;
     outline: none;
     transition: 0.4s;
     font-family: Demi;
@@ -418,9 +426,9 @@ h3{
     background-color: white;
     display: none;
     overflow: hidden;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
     color: black;
   }
 
