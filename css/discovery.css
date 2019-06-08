@@ -109,7 +109,7 @@ img{
 /* resources section */
 .resources{
   padding-top:100px;
-  padding-bottom:170px;
+  padding-bottom:220px;
 }
 .resources_container {
   background-color: #f7f6f3;
@@ -189,6 +189,9 @@ button:hover{
   display: flex;
   justify-content: space-between;
   height: 100%;
+}
+#additional{
+  display:none;
 }
 h3{
   font-size:12px;
@@ -355,14 +358,14 @@ h3{
   }
 
   #resourcetitle {
-    padding-top: 60px;
+    padding-top: 50px;
     font-size: 35px;
     max-width: 8ch;
   }
 
   .title {
-    padding-left: 20px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .small {
@@ -375,8 +378,10 @@ h3{
     display: none;
   }
 
-
   .container {
+    display: none;
+  }
+  .row {
     display: none;
   }
 
@@ -388,7 +393,6 @@ h3{
   .resources {
     padding-bottom: 0px;
   }
-
   .accordion {
     background-color: #f7f6f3;
     color: black;
@@ -453,10 +457,7 @@ h3{
     color: black;
   }
 
-  .row {
-    display: none;
-  }
-
+ 
   #footer{
     padding-top:50px;
     padding-bottom:50px;
@@ -549,8 +550,8 @@ h3{
     font-family: 'Franklin Gothic Medium', sans-serif;
   }
 
-  .empty {
-    height: 20px;
+  #empty {
+    height: 60px;
     width: 100%;
     background-color: #f7f6f3;
   }
