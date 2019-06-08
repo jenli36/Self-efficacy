@@ -351,6 +351,7 @@ h3{
 
   .resources_container {
     background-color:  #f7f6f3;
+    padding-bottom: 20px;
   }
 
   #resourcetitle {
@@ -546,5 +547,11 @@ h3{
 
   .small {
     font-family: 'Franklin Gothic Medium', sans-serif;
+  }
+
+  .empty {
+    height: 20px;
+    width: 100%;
+    background-color: #f7f6f3;
   }
 }

@@ -488,6 +488,7 @@ img{
         display: none;
     }
 
+
 @media (max-width: 768px) {
 
     .image_container_left {
@@ -508,7 +509,6 @@ img{
     #recopy{
         width: 80%;
         height: auto;
-        padding-top: 10px;
     }
 
     #self {
@@ -701,7 +701,7 @@ img{
     }
 
     li {
-        line-height: 20px;
+        line-height: 17px;
         padding-bottom: 15px;
     }
     .dot {
