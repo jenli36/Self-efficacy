@@ -161,7 +161,9 @@ button:hover{
   padding-right:10%;
   float:right;
 }
-
+#empty{
+  display:none;
+}
 .test{
   padding:15px 34px;
   background:transparent;
@@ -373,6 +375,12 @@ h3{
 
   #whatis {
     display: none;
+  }
+
+  #empty{
+    display:flex;
+    padding-top:50px;
+    background-color:#f7f6f3;
   }
 
   .container {
