@@ -188,6 +188,7 @@ footer{
   color:white;
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 h3{
   font-size:12px;
@@ -290,6 +291,10 @@ h3{
 
 
 @media (max-width: 768px) {
+
+  body {
+    height: 100%;
+  }
 
   .navigation {
     display: none;
@@ -450,13 +455,17 @@ h3{
   .row {
     display: none;
   }
+
+
   footer{
-    padding-top:25px;
+    padding-top:50px;
     padding-bottom:50px;
     background-color:black;
     color:white;
     display: flex;
     justify-content: space-between;
+    z-index: -1;
+    height: 100%;
   }
   .leftbot {
     padding-left: 25px;
