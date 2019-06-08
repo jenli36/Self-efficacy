@@ -143,12 +143,12 @@ img{
 /* button at the bottom */
 button{
   background-color: transparent;
-    border:2px solid black;
-    padding:20px 36px;
-    font-family: Demi;
-    font-size: 14px;
-    transition-duration: 0.4s;
-    float: right;
+  border:2px solid black;
+  padding:20px 36px;
+  font-family: Demi;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  float: right;
 }
 
 button:hover{
@@ -258,8 +258,8 @@ h3{
     transform: scaleX(0);
     transition: .25s linear;
   }
-  .each > a:hover:before,
-  .each > a:focus:before {
+.each > a:hover:before,
+.each > a:focus:before {
     visibility: visible;
     transform: scaleX(1);
 }
