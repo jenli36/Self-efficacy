@@ -500,7 +500,15 @@ img{
     }
 
     #finalcopy {
-        width: 85%;
+        width: 75%;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+    #recopy{
+        width: 80%;
+        height: auto;
+        padding-top: 10px;
     }
 
     #self {
