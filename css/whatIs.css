@@ -255,7 +255,7 @@ footer{
   }
   .leftbot{
     padding-left:7%;
-    max-width: 45ch;
+    max-width: 60ch;
   }
   .rightbot{
     width:50%;
@@ -303,11 +303,6 @@ footer{
 img{
     height:120%;
 }
-/* #image4{
-    margin-top:80px;
-    height:120%;
-    margin-left:60px;
-} */
 
 /* setting the font-fam,font-size,padding for top&bottom for text on slides */
 
@@ -453,40 +448,40 @@ img{
     border-radius: 5px;
     transform: scaleX(0);
     transition: .25s linear;
-  }
-  .tabs > a.short:before{
+}
+.tabs > a.short:before{
     width:54%;
-  }
-  .tabs > a.activate:before,
-  .tabs > a:hover:before,
-  .tabs > a:focus:before {
+}
+.tabs > a.activate:before,
+.tabs > a:hover:before,
+.tabs > a:focus:before {
     visibility: visible;
     transform: scaleX(1);
 }
 
-    .topnav {
-        display: none;
-    }
+.topnav {
+    display: none;
+}
 
-    .image_containercopy {
-        display: none;
-    }
+.image_containercopy {
+    display: none;
+}
 
-    .devimg {
-        display: none;
-    }
+.devimg {
+    display: none;
+}
 
-    hr {
-        display: none;
-    }
+hr {
+    display: none;
+}
 
-    .confidencecopy {
-        display: none;
-    }
+.confidencecopy {
+    display: none;
+}
 
-    .motivationcopy {
-        display: none;
-    }
+.motivationcopy {
+    display: none;
+}
 
 
 @media (max-width: 768px) {
@@ -649,7 +644,7 @@ img{
     .rightText {
         width: 100%;
         padding-left: 25px; 
-    padding-left: 25px; 
+        padding-left: 25px; 
         padding-left: 25px; 
         padding-right: 0px;
         margin-left: 0px;
@@ -713,105 +708,106 @@ img{
         padding-right: 10px;
     }
 
-#img4copy {
-    display: block;
-    height: 25%;
-    padding-left: 40px;
-}
-
-#text4 {
-    padding-bottom: 20px;
-}
-
-.nextsection {
-    padding-left: 25px;
-    padding-top: 0px;
-    padding-bottom: 0px; 
-}
-
-.boldtitle2 {
-    font-size: 35px;
-    max-width: 12ch;  
-}
-
-.lightpara {
-    max-width: 42ch;
-}
-
-.row {
-    display: block;
-    margin:0%;
-    padding-bottom: 0px;
-    margin-left:25px;
-    height: 650px;
-}
-
-.text_container,.text_container2{
-    width:100%;
-    background-color: white;
-    padding-bottom: 0px;
-}
-
-.eachtitle {
-    font-size: 20px;
-    padding-top: 0px;
-}
-
-.eachtext {
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
-.image_container2 {
-    display:none;
-}
-
-.devimg {
-    display: block;
-    margin-top: 150px;
-}
-.firstdevimg{
-    margin-top:50px;
-}
-
-.img2 {
-    height:100%;
-    width: 100%;
-}
-
-#verbalcopy {
-    width: 80%;
-    margin-left: 40px;
-    padding-top: 50px;
-    margin-bottom: 30px;
-    object-fit: cover;
-}
-.lastlist{
-    padding:0px;
-}
-.lastsection {
-    margin-top: 250px;
-    display: block;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.boldtitle3 {
-    font-size: 35px;
-}
-
-#letter {
-    display: none;
-}
-
-.rightbot {
-    display: none;
+    #img4copy {
+        display: block;
+        height: 25%;
+        padding-left: 40px;
     }
 
-.leftbot {
-    padding-left: 35px;
-}
-    .footerh3 {
+    #text4 {
+        padding-bottom: 20px;
+    }
+
+    .nextsection {
+        padding-left: 25px;
+        padding-top: 0px;
+        padding-bottom: 0px; 
+    }
+
+    .boldtitle2 {
+        font-size: 35px;
+        max-width: 12ch;  
+    }
+
+    .lightpara {
+        max-width: 42ch;
+    }
+
+    .row {
+        display: block;
+        margin:0%;
+        padding-bottom: 0px;
+        margin-left:25px;
+        height: 650px;
+    }
+
+    .text_container,.text_container2{
+        width:100%;
+        background-color: white;
+        padding-bottom: 0px;
+    }
+
+    .eachtitle {
+        font-size: 20px;
+        padding-top: 0px;
+    }
+
+    .eachtext {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .image_container2 {
+        display:none;
+    }
+
+    .devimg {
+        display: block;
+        margin-top: 150px;
+    }
+    .firstdevimg{
+        margin-top:50px;
+    }
+
+    .img2 {
+        height:100%;
+        width: 100%;
+    }
+
+    #verbalcopy {
+        width: 80%;
+        margin-left: 40px;
+        padding-top: 50px;
+        margin-bottom: 30px;
+        object-fit: cover;
+    }
+    .lastlist{
+        padding:0px;
+    }
+    .lastsection {
+        margin-top: 250px;
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .boldtitle3 {
+        font-size: 35px;
+    }
+
+    #letter {
+        display: none;
+    }
+
+    .rightbot {
+        display: none;
+        }
+
+    .leftbot {
+        padding-left: 35px;
+        max-width: 45ch;
+    }
+        .footerh3 {
         font-size: 14px;
     }
 

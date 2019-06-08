@@ -185,7 +185,8 @@ footer{
     }
 
     .leftbot {
-        max-width: 50ch;
+        padding-left:35px;
+        max-width: 45ch;
     }
 
   
@@ -274,9 +275,6 @@ footer{
     }
     .rightbot {
         display: none;
-    }
-    .leftbot {
-        padding-left:35px;
     }
     #footertitle {
         font-size: 14px;
