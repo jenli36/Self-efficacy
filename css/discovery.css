@@ -109,7 +109,7 @@ img{
 /* resources section */
 .resources{
   padding-top:100px;
-  padding-bottom:228px;
+  padding-bottom:170px;
 }
 .resources_container {
   background-color: #f7f6f3;
@@ -181,7 +181,7 @@ button:hover{
   color: black !important;
 }
 /* footer */
-footer{
+#footer{
   padding-top:25px;
   padding-bottom:50px;
   background-color:black;
@@ -210,7 +210,8 @@ h3{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-* {margin:0;padding:0;border:0 none;position: relative; outline: none;
+* {
+  margin:0;padding:0;border:0 none;position: relative; outline: none;
 }
 
 .tabs > a:before {
@@ -456,8 +457,7 @@ h3{
     display: none;
   }
 
-
-  footer{
+  #footer{
     padding-top:50px;
     padding-bottom:50px;
     background-color:black;
