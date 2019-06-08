@@ -119,22 +119,22 @@ footer{
     color:white;
     display: flex;
     justify-content: space-between;
-  }
-  h3{
+}
+h3{
     font-size:12px;
     line-height:22px;
-  }
-  .leftbot{
+}
+.leftbot{
     padding-left:7%;
     max-width: 60ch;
-  }
-  .rightbot{
+}
+.rightbot{
     width:50%;
     padding-right:7%;
-  }
-  .bottom{
+}
+.bottom{
     font-size:12px;
-  }
+}
 *, *:after, *:before {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -241,13 +241,12 @@ footer{
     }
     .letter{
         display: block;
-        padding-top:20px;
-        justify-content: center;
+        padding-top:25px;
         padding-bottom:30px;
         width:100%;
     }
     h1{
-        font-size:40px;
+        font-size:35px;
         max-width: none;
     }
     h1.desktop {
