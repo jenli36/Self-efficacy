@@ -70,8 +70,8 @@ void draw() {
     } else {
       text(messages[index], 0, 0);
     }
-    text("TALK TO", 0, 70);
-    text("OUR TEAM MEMBERS", 0, 150);
+    text("TAKE A", 0, 70);
+    text("POSTCARD", 0, 150);
     text("TO LEARN MORE →", 0, 230);
     disable = true;
     if (millis() - start2 > DURATION) {
@@ -128,9 +128,9 @@ void keyPressed() {
 }
 
 void serialEvent(Serial myPort) {
-   if (myPort.available() > 0 && !disable) {
+   if (myPort.available() > 0) {
     val = myPort.readStringUntil('\n');
-    if (val != null) {
+    if (val != null && !disable) {
       music.play();
       Circle c = new Circle();
       circles.add(c);
