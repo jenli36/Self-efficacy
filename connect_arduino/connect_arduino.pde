@@ -96,8 +96,8 @@ void draw() {
   }
 
   // Clear the entire thing once the connection exceeds 40
-  if (circles.size() > 35) {
-    for (int i = 0; i < 15; i++) {
+  if (circles.size() > 30) {
+    for (int i = 0; i < 20; i++) {
       circles.remove(0);
     }
   }
